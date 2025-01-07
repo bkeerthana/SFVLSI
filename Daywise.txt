@@ -5,3 +5,37 @@ Day-1:
 - student involvement in assessment process - consent form, pre-test and post-test steps instructions provided 
 - Discussion about devices with operating systems and without operating systems
 
+------------------------------------------------------------------------------------------------------------------
+Day -2
+- Scripting Vs programming
+In Windows - Powershell 
+In Linux   - bashshell 
+
+- commands 
+     - simple 
+     - compound 
+     - complex 
+- Types 
+     - internal 
+     - external 
+- Getting help 
+      - man 
+      - info 
+      - help 
+      - type
+      - whatis 
+      - which 
+      - -- help (it is a option) 
+        usage: command --help 
+Readings:
+Getting Help : https://bkeerthanamanipal.blogspot.com/2024/11/getting-help-in-linux.html
+About man    : https://bkeerthanamanipal.blogspot.com/2024/11/
+
+In Linux everything is file 
+       - Regular 
+       - Directory 
+       - Special 
+-started writing script 
+      - included shebang line 
+
+-----------------------------------------------------------------------------------------------------------------------
