@@ -1,4 +1,4 @@
-Day-1: 
+Day-1:  1.5
 - discussed overall course content - split in to 4 modules 
 - discussed assignments (both theory and lab) - Each assignment carries 10 marks 
 - Attendance - 75% is important 
@@ -6,7 +6,7 @@ Day-1:
 - Discussion about devices with operating systems and without operating systems
 
 ------------------------------------------------------------------------------------------------------------------
-Day -2
+Day -2 : 1
 - Scripting Vs programming
 In Windows - Powershell 
 In Linux   - bashshell 
@@ -39,3 +39,27 @@ In Linux everything is file
       - included shebang line 
 
 -----------------------------------------------------------------------------------------------------------------------
+Day-3 : 1
+
+Operating system 
+      - Kernel 
+      - shell 
+      - File system 
+
+To identify default shell 
+To list all built in variables 
+
+started writing script 
+      - included shebang line 
+      - added single statement 
+
+To execute the script 
+
+To set the permission - chmod 
+       - numeric 
+       - nemonic
+
+ls -l 
+--------------------------------------------------------------------------------------------------------------------------
+
+
