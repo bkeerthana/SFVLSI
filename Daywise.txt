@@ -65,5 +65,28 @@ Intro to
        /etc/passwd
        /etc/group      
 --------------------------------------------------------------------------------------------------------------------------
+Day -2 : 2 
 
+To check the type of file system 
 
+different methods to create file 
+
+Basic command : cat 
+Intro to redirection  >, >>
+
+File management 
+        - cp
+        - mv 
+        - rm 
+        - rmdir 
+        - mkdir 
+
+Globbing 
+       - *
+       - ? 
+       - [ ] 
+
+Path name 
+       - Absolute path 
+       - Relative path 
+---------------------------------------------------------------------------------------------------------------------------------
