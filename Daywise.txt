@@ -81,7 +81,7 @@ File management
         - rmdir 
         - mkdir 
 
-Globbing 
+Globbing (operators)
        - *
        - ? 
        - [ ] 
