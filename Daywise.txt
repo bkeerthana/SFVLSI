@@ -90,3 +90,30 @@ Path name
        - Absolute path 
        - Relative path 
 ---------------------------------------------------------------------------------------------------------------------------------
+Day -3: 2 
+Globbing 
+     - More on character class 
+     - { } 
+sudo 
+cat /etc/group 
+
+Process 
+    Program Vs. process 
+    background Vs. foreground
+    to check the current process 
+    to kill the process by id 
+    to send the job to background 
+    to take from the background 
+    to kill the process by name
+Scheduling 
+     abstract Level about at and cron 
+     to schedule the command using at 
+     Try : to schedule the script using at 
+
+Self Exploration: Provided abstract idea 
+      Extended globbing 
+      adduser 
+      addgroup 
+      chown 
+      chgrp
+------------------------------------------------------------------------------------------------------------------------------------------
