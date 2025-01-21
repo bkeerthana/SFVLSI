@@ -65,7 +65,7 @@ Intro to
        /etc/passwd
        /etc/group      
 --------------------------------------------------------------------------------------------------------------------------
-Day -2 : 2 
+Day -4 : 2 
 
 To check the type of file system 
 
@@ -90,7 +90,7 @@ Path name
        - Absolute path 
        - Relative path 
 ---------------------------------------------------------------------------------------------------------------------------------
-Day -3: 2 
+Day -5: 2 
 Globbing 
      - More on character class 
      - { } 
@@ -117,3 +117,33 @@ Self Exploration: Provided abstract idea
       chown 
       chgrp
 ------------------------------------------------------------------------------------------------------------------------------------------
+Day -6: 2 
+
+Scheduling 
+     at 
+       at -f 
+       atq
+       atrm 
+
+     cron 
+         five + one parameter 
+         min hour day month dow jobspecification >/abs/path 
+        crontab 
+        crontab -e
+        crontab -l 
+
+Networking 
+       hostname
+       whoami
+       ifconfig
+       scp 
+       nslookup 
+       ping 
+       ssh  (Explore) 
+
+ Quotes 
+       Double    - consider special meaning 
+       single    - no special meaning 
+       Backtick  - command substitution 
+       backslash - escape seq (next one character) 
+----------------------------------------------------------------------------------------------------------------------------------------------
