@@ -147,3 +147,39 @@ Networking
        Backtick  - command substitution 
        backslash - escape seq (next one character) 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+Day-7 : 2 
+git 
+  - what is git 
+  - why do we need 
+  - Types of version control 
+            - centralized 
+            - distributed 
+  - git  Vs. github 
+  - git commands 
+          - To check git is installed or not 
+          - To check the version of git 
+          - Different methods to get help 
+
+          - Set configuration 
+               - Global , local , system 
+               - set user name 
+               - set email 
+               - set default editor 
+
+          - Methods to intialize 
+
+          - working directory / untraced 
+          - staging area
+          - repoistory 
+
+          - created file --> send to stage ---> send to repo
+
+          - check the status 
+          - check the log 
+          - check the shortlog 
+
+          - rename the file 
+
+          - restore 
+          - remove the stage 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
