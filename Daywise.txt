@@ -255,5 +255,25 @@ Day-10: Regex
 Difference between Regex and globbing 
                    BRE Vs. ERE Vs. PCRE
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-11 Scripting 
+         - Constructs 
+             - Sequential 
+             - conditional 
+                    - test 
+                    - [ 
+                    - if 
+                    - case 
+           - passing values to the program 
+                    - hard code 
+                    - read 
+                         -p 
+                         -t
+                    - command line arguments / Positional parameters 
+                         -S1 - first argument 
+                         -$2 - second argument 
+                         -$0 - file name 
+                         -${10} - 10th argument 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
