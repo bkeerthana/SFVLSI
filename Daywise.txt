@@ -274,6 +274,23 @@ Day-11 Scripting
                          -$0 - file name 
                          -${10} - 10th argument 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-12: Scripting-II
+            - Arithmetic operations 
+                    - bc
+                    - $((expression))
 
+            - Scripting using 
+                     - arithmetic 
+                     - grep 
 
+            - Pass value to program using 
+                     - hard code 
+                     - read statement 
+                     - command line arguments 
+
+             - $# 
+             - conditional statements 
+                      if
+             - Intro to sed 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
