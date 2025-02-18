@@ -293,4 +293,26 @@ Day-12: Scripting-II
                       if
              - Intro to sed 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-13: Sed 
+            - what is sed 
+            - sed syntax
+            - applications of sed 
+
+            - compare grep,sed,awk 
+
+            - commands 
+                 p
+                 d
+
+            - variations 
+              sed -options 'command' filename 
+              sed -options '# command' filename 
+              sed -options '/pattern/command' filename
+              sed -options '#,# command' filename 
+              sed -options '/pattern1/, /pattern2/ command' filename 
+              sed -options '!command' filename 
+
+            - p = !d 
+            - d = !p 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
