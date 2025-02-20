@@ -315,6 +315,9 @@ Day-13: Sed
             - p = !d 
             - d = !p 
 
+            - options 
+                -i --- infile
+
 In Lab: 
           command 
              y 
@@ -355,6 +358,9 @@ Day-14:
         * 
         .*
         (.*) 
+
+        Options 
+         -e  ---to execute multiple commands 
 
         Compare grep and sed through examples 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
