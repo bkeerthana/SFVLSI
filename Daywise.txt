@@ -314,5 +314,47 @@ Day-13: Sed
 
             - p = !d 
             - d = !p 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+In Lab: 
+          command 
+             y 
+             s
+             a
+             i 
+             c 
+
+          command "s" 
+          sed 's/from/to/flag' filename 
+          flag - 
+          g    ---------- global 
+          #    ---------- nth value 
+          #g   ---------- from nth occurrence 
+          i    ---------- ignore case 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-14:
+         command 
+          w 
+
+         sed s flag
+         w    --- Write only the substituted line to a file
+         p    --- Print only the substituted line
+         e    --- execute and Substitute in the command line
+         &    --- get the matched pattern 
+         
+
+
+        Regular Expression 
+        ( )  --- Group using ( and ). Use \1, \2 in replacement group
+        {#}
+        {#, } 
+        { ,#}
+        {#,#}
+        + 
+        . 
+        ? 
+        * 
+        .*
+        (.*) 
+
+        Compare grep and sed through examples 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
