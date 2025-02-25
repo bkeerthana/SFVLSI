@@ -364,3 +364,23 @@ Day-14:
 
         Compare grep and sed through examples 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-15
+
+Revisit - grep and its options 
+Revisit - sed options and commands 
+
+sed command 
+         l 
+         r 
+         G
+         n 
+
+sed grouping 
+        { sed command; sed command}
+
+Intro to awk
+        awk action block 
+        awk pattern block 
+        file --- record ---- fields are represented by $1, S2 and so on. 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                    
