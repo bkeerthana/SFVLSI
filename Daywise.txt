@@ -383,4 +383,20 @@ Intro to awk
         awk pattern block 
         file --- record ---- fields are represented by $1, S2 and so on. 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                    
+Day-16
+awk variables 
+          - user defined variables 
+          - built in variables 
+                   NF
+                   NR
+          - BEGIN Block 
+          - END Block
+          - Pattern Block 
+               /pattern/ 
+               field  relational_op value  Ex: $3 > 40 
+               field ~ "String"            Ex: $3 ~ "Asha"
+           - Action Block 
+               { print } 
+               { c = c+1 } 
+               { c = $1+$2 }
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
