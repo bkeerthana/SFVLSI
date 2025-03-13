@@ -421,3 +421,97 @@ Day -17
                  -f filename 
                  -F Fieldsep
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day -18 
+
+Pattern Block
+  /Eve/,/Alice/ 
+  /Eve/ && /Alice/
+  /Eve/ || /Alice/  
+  !/Eve/ 
+  /(Eve|Alice)/ 
+
+
+Built-in variable 
+  IGNORECASE =1 # ignore case sensitive 
+
+Subroutine
+  BEGIN { }
+  awk -F'[, ]' 'BEGIN {print "------"} {print $1}' contacts1.txt contacts.txt
+
+  END { }
+
+Option 
+-v 
+  awk -v use values.txt , values.awk  
+  awk -v RS="[0-9]+" '{print $1}' randomstring
+  awk -v IGNORECASE=1 '/Asha/ {print}' contacts.txt
+
+-e 
+  awk -e '/asha/' -e '/banu/'  contacts.txt
+
+-f 
+  awk -f values.awk values.txt 
+
+-F 
+  awk -F: '{print $1}' /etc/passwd 
+
+Built-in variables 
+
+RS
+  awk -v RS="[0-9]+" '{print $1}' randomstring
+ 
+RT 
+awk -v RS="[0-9]+" '{print RT}' randomstring
+
+Control statements 
+if 
+awk -F", " '{ if ($1 ~ /^D/ && $2 == "Bangalore") print $1 }' data.txt
+
+{
+if (NF > 1 && NF <= 2)
+{
+	print "perfect"
+}
+else if (NF >3)
+	print "More Info"
+
+else 
+	print "not perfect"
+}
+
+----------------------------------
+{
+if (NF > 1)
+{
+	print "perfect"
+}
+else 
+	print "not perfect"
+}
+
+
+for 
+{
+ for(i=1;i<=NF;i++)
+  {
+  total+=$i
+
+  }
+}
+END {print total} 
+#use values2.txt
+10 20 30 40 50 
+
+Built-in functions
+     length 
+     toupper
+     tolower 
+
+     split
+     echo "Hello:world" | awk '{split($0,values,":");print values[2]}'
+
+     gsub
+     echo "Manipal" | awk '{gsub(/a/,"#",$0);print}'
+
+System commands
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
