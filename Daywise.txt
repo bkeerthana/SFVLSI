@@ -515,3 +515,38 @@ Built-in functions
 
 System commands
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day -19
+
+Intro to Perl 
+       - check perl is installed or not 
+       - different ways to get help 
+              man 
+              perldoc 
+              perl -h 
+
+
+       - different ways to execute perl 
+            command line
+                        perl -e 'print "Hello\n"; ' 
+            
+            perl script 
+                        perl filename.pl 
+
+       - variables 
+                 Scalar
+                     $var
+                 Array 
+                      @var 
+
+
+        - Diamond operators 
+
+
+        - Power of one liners 
+                    perl options 
+                          - h to get help 
+                          - c to get syntax 
+                          - e to execute perl commands in command line 
+                          - n  shorthand notation to while loop 
+                          - p  same as option n  + print statement 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
