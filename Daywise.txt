@@ -550,3 +550,44 @@ Intro to Perl
                           - n  shorthand notation to while loop 
                           - p  same as option n  + print statement 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day -20
+ perl -n -e 'print' c1.txt
+                  perl -p -e '' c1.txt
+                  
+	          perl -npe '$_' data.txt
+	          perl -ne 'print $_' data.txt
+	          
+	          perl -p -e '$_ = uc($_);' file.txt
+                  perl -p -e '$_ = lc($_);' file.txt
+                  
+                  perl -p -e '$_="" if /^\s*$/;' file.txt
+                  
+                  perl -n -e 'print "$. $_";' file.txt
+                  perl -n -e '$_ = "$. $_"; print $_;' file.txt
+                  perl -p -e '$_ = "$. $_";' file.txt
+                  
+                  printf '1:2:3:4\na:b:c:d\n' | perl -ne 's/:/-/g; print $_;'
+                  printf '1:2:3:4\na:b:c:d\n' | perl -pe 's/:/-/g;'
+                  
+                  printf '1:2:3:4\na:b:c:d\n' | perl -pe 'tr/:/|/;'
+
+String operations 
+                  concat . 
+                  repetition x
+
+                  chop 
+                  chomp 
+
+                  pattern matching 
+
+                      perl -ne 'print if /Eve/' data.txt 
+		      perl -ne 'if (/Eve/) { print }' data.txt
+     		      perl -ne 'if (/Eve/) { print} else { print "Not Eve\n"; }' data.txt
+                      perl -ne 'if (/Asha/) { print "Found\n"} else { print "Not Eve\n"; }' data.txt
+
+                  Matching operator  m/ /
+                  substitution       s/a/b/
+                  translation         tr/a/:/
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                             
+
