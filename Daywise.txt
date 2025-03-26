@@ -607,7 +607,8 @@ perl array
 
 command line arguments 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Day -22 
+In Lab - 
+
 read from the file in bash: 
 
 #!/usr/bin/bash
@@ -631,9 +632,25 @@ while read -r pattern; do
 done < "$patterns_file"
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Perl - 
-Literal 
+Literal  __DATA__ 
+Array 
+   split 
+   join
+   sort 
+   reverse 
+   <=> 
+   get the items from the user and store in an array 
+   count number of items in the array 
+   shift 
+   ARGV
+   command line arguments
+
+Intro to subroutine 
+
+Sample Codes for your references: 
+
 #!/usr/bin/perl
 use strict;
 use warnings;
@@ -671,3 +688,4 @@ greet() if $option eq "-g" or $option eq "--greet";
 bye () if $option eq "-b" or $option eq "--bye";
 
 # print "Hello, world.\n";
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
