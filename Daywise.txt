@@ -607,4 +607,25 @@ perl array
 
 command line arguments 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day -22 
+read from the file in bash: 
 
+#!/usr/bin/bash
+while read line
+do 
+echo "Read Line: $line"
+done < greet.txt
+------------------------------------------------
+#!/bin/bash
+
+patterns_file="patterns.txt"
+search_file="data.txt"
+
+while read -r pattern; do
+  # Skip empty lines or lines starting with #
+  [[ -z "$pattern" || "$pattern" =~ ^# ]] && continue
+  
+  echo "Searching for: $pattern"
+  grep "$pattern" "$search_file"
+  echo "----------------------------------"
+done < "$patterns_file"
