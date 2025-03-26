@@ -648,3 +648,26 @@ __DATA__
 This is the first line.
 This is the second line.
 Another line of data.
+-------------------------------------------------------------------------------------------------------------
+#!/usr/bin/perl -w
+
+use strict;
+
+sub greet {
+    print "Hello\n";
+    print "Welcome to Perl Command Line Arguments";
+}
+
+sub bye
+{
+ print "Have a nice day \n";
+}
+
+my $option = shift;    # defaults to shifting @ARGV 
+                       # shift @ARGV
+
+greet() if $option eq "-g" or $option eq "--greet";
+
+bye () if $option eq "-b" or $option eq "--bye";
+
+# print "Hello, world.\n";
