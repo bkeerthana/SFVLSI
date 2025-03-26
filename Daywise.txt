@@ -629,3 +629,22 @@ while read -r pattern; do
   grep "$pattern" "$search_file"
   echo "----------------------------------"
 done < "$patterns_file"
+
+
+
+Perl - 
+Literal 
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+# Read data from the __DATA__ section
+while (<DATA>) {
+    chomp;
+    print "Line: $_\n";
+}
+
+__DATA__
+This is the first line.
+This is the second line.
+Another line of data.
