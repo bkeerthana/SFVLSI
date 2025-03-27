@@ -689,3 +689,29 @@ bye () if $option eq "-b" or $option eq "--bye";
 
 # print "Hello, world.\n";
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day -22
+Perl command line arguments
+Intro to file handling
+
+  #!/usr/bin/perl
+    use strict;
+    use warnings;
+
+    my $string1 = 'Perl has 196,905 modules, written by 14100 authors ';
+
+    my $avg_contr = 196905/14100; 
+    
+    print $avg_contr; 
+    
+    print "\n";
+    
+    if ($string1 !~ m/\d/ ) 
+    {
+        print "Doesn't contain numbers\n";
+    } else { 
+        print "Does contain numbers\n";
+    }
+
+    exit 0;
+    
+    
