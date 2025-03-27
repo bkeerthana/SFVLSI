@@ -713,5 +713,16 @@ Intro to file handling
     }
 
     exit 0;
-    
+
+
+my $file = <DATA>; 
+
+my @strings = $file =~ /string/ig; #returns all except the last string across 
+print scalar @strings;
+
+__DATA__
+String string string
+Hello
+
+
     
