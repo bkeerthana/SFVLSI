@@ -690,8 +690,15 @@ bye () if $option eq "-b" or $option eq "--bye";
 # print "Hello, world.\n";
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Day -22
-Perl command line arguments
-Intro to file handling
+Hands on the following topics 
+
+  Perl command line arguments
+  pattern matching 
+
+Explore: 
+  translate  tr///
+  substitute  s///
+
 
   #!/usr/bin/perl
     use strict;
