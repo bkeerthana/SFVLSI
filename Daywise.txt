@@ -731,5 +731,18 @@ __DATA__
 String string string
 Hello
 
+--------------------------------------------------------------------------------------------
+Day-23
+
+
+---------------------------------------------------------------------------------------------
+
+Lab
+my @items = qw(apple banana cherry);
+if (grep { $_ eq "banana" } @items) {
+    print "Found banana!\n";
+} else {
+    print "Not found.\n";
+}
 
     
