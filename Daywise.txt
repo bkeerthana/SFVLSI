@@ -788,3 +788,7 @@ if (exists $delays{"NOR"}) {
     print "NOR gate not found\n";
 }
 
+# to pick few values from the array or slice
+my ($and, $or) = @delays{('AND', 'OR')};
+
+
