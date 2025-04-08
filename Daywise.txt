@@ -767,3 +767,15 @@ my %delays = (
 
 # add another value to hash
 $delays{"XOR"} = 0.8;  # Add XOR gate delay
+
+# get the value and key from the user 
+
+print "Enter the name of the contact:";
+$fname =<>;
+print "Enter your friend number:";
+$phone =<>; 
+
+$contact{$fname}=$phone;
+print "The value of hash is";
+
+print %contact; 
