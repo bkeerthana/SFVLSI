@@ -811,4 +811,19 @@ foreach my $key (sort {$delays{$a} <=> $delays{$b}} keys %delays) {
 }
 
 
+# Store an array of values 
+
+my %students = (
+    "Alice" => ["Math", "Science"],
+    "Bob"   => ["English", "History"],
+);
+
+# Add a subject
+push @{ $students{"Alice"} }, "Art";
+
+# Print all subjects for each student
+foreach my $name (keys %students) {
+    print "$name studies: ", join(", ", @{ $students{$name} }), "\n";
+}
+
 
