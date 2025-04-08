@@ -744,5 +744,24 @@ if (grep { $_ eq "banana" } @items) {
 } else {
     print "Not found.\n";
 }
+-----------------------------------------------------------------------------------------
+Day-24
 
-    
+Hash creation
+
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+# creation of hash 
+
+my %delays = (
+    "AND"  => 0.5,
+    "OR"   => 0.6,
+    "NAND" => 0.4,
+    "NOR"  => 0.7
+);
+
+# another method to create 
+%delays = ('AND', 0.5, 'OR', 0.6, 'NAND', 0.4 , 'NOR', 0.7);
+
