@@ -827,3 +827,15 @@ foreach my $name (keys %students) {
 }
 
 
+my %students = (
+    "Alice" => ["Math", "Science"],
+    "Bob"   => ["English", "History"],
+);
+
+# Add a subject
+push @{ $students{"Alice"} }, "Art";
+
+# Print all subjects for each student
+foreach my $name (keys %students) {
+    print "$name studies: ", join(", ", @{ $students{$name} }), "\n";
+}
