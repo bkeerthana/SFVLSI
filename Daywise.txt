@@ -779,3 +779,12 @@ $contact{$fname}=$phone;
 print "The value of hash is";
 
 print %contact; 
+
+# to check the value is exists or not 
+
+if (exists $delays{"NOR"}) {
+    print "NOR gate delay is $delays{'NOR'} ns\n";
+} else {
+    print "NOR gate not found\n";
+}
+
