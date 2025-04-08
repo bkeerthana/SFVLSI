@@ -765,3 +765,5 @@ my %delays = (
 # another method to create 
 %delays = ('AND', 0.5, 'OR', 0.6, 'NAND', 0.4 , 'NOR', 0.7);
 
+# add another value to hash
+$delays{"XOR"} = 0.8;  # Add XOR gate delay
