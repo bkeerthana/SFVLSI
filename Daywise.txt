@@ -853,3 +853,26 @@ print $employee{"E001"}{"name"};  # John
 foreach my $id (keys %employee) {
     print "$id => $employee{$id}->{name}, $employee{$id}->{dept}\n";
 }
+
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+my %count;
+my $file = 'words.txt';
+
+open(my $fh, '<', $file) or die "Cannot open $file: $!";
+
+while (my $line = <$fh>) {
+    chomp $line;
+    my @words = split /\s+/, $line;
+    $count{$_}++ for @words;
+}
+
+close($fh);
+
+# Print word counts
+foreach my $word (sort keys %count) {
+    print "$word: $count{$word}\n";
+}
