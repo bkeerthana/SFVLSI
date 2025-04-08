@@ -1,3 +1,6 @@
+
+
+
 Day-1:  1.5
 - discussed overall course content - split in to 4 modules 
 - discussed assignments (both theory and lab) - Each assignment carries 10 marks 
@@ -790,5 +793,22 @@ if (exists $delays{"NOR"}) {
 
 # to pick few values from the array or slice
 my ($and, $or) = @delays{('AND', 'OR')};
+
+# sort hash by keys 
+
+my %power = (
+    "ALU"   => 2.5,
+    "Cache" => 3.8,
+    "Decoder" => 1.2
+);
+
+foreach my $block (sort keys %power) {
+    print "$block Power: $power{$block} W\n";
+}
+
+foreach my $key (sort {$delays{$a} <=> $delays{$b}} keys %delays) {
+    print "$key: $delays{$key}\n";
+}
+
 
 
