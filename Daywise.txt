@@ -839,3 +839,17 @@ push @{ $students{"Alice"} }, "Art";
 foreach my $name (keys %students) {
     print "$name studies: ", join(", ", @{ $students{$name} }), "\n";
 }
+
+
+my %employee = (
+    "E001" => { name => "John", dept => "HR", salary => 50000 },
+    "E002" => { name => "Jane", dept => "IT", salary => 70000 },
+);
+
+# Access
+print $employee{"E001"}{"name"};  # John
+
+# Iterate
+foreach my $id (keys %employee) {
+    print "$id => $employee{$id}->{name}, $employee{$id}->{dept}\n";
+}
