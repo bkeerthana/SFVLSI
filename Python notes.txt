@@ -1,0 +1,3834 @@
+# Introduction
+
+# Day 1 -
+
+print(3 + 2)   # addition(+)
+print(3 - 2)   # subtraction(-)
+print(3 * 2)   # multiplication(*)
+print(3 / 2)   # division(/)
+print(3 ** 2)  # exponential(**)
+print(3 % 2)   # modulus(%)
+print(3 // 2)  # Floor division operator(//)
+
+# Checking data types
+
+print(type(10))                  # Int
+print(type(3.14))                # Float
+print(type(1 + 3j))              # Complex
+print(type('Asabeneh'))          # String
+print(type([1, 2, 3]))           # List
+print(type({'name':'Asabeneh'})) # Dictionary
+print(type({9.8, 3.14, 2.7}))    # Set
+print(type((9.8, 3.14, 2.7)))    # Tuple
+print(type(3 == 3))              # Bool
+print(type(3 >= 3))              # Bool
+
+
+
+# Variables in Python
+
+first_name = 'Asabeneh'
+last_name = 'Yetayeh'
+country = 'Finland'
+city = 'Helsinki'
+age = 250
+is_married = True
+skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
+person_info = {
+    'firstname':'Asabeneh', 
+    'lastname':'Yetayeh', 
+    'country':'Finland',
+    'city':'Helsinki'
+    }
+
+# Printing the values stored in the variables
+
+print('First name:', first_name)
+print('First name length:', len(first_name))
+print('Last name: ', last_name)
+print('Last name length: ', len(last_name))
+print('Country: ', country)
+print('City: ', city)
+print('Age: ', age)
+print('Married: ', is_married)
+print('Skills: ', skills)
+print('Person information: ', person_info)
+
+# Declaring multiple variables in one line
+
+first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+
+print(first_name, last_name, country, age, is_married)
+print('First name:', first_name)
+print('Last name: ', last_name)
+print('Country: ', country)
+print('Age: ', age)
+print('Married: ', is_married)
+
+
+Variables
+Variables store data in a computer memory. Mnemonic variables are recommended to use in many programming languages. A mnemonic variable is a variable name that can be easily remembered and associated. A variable refers to a memory address in which data is stored. Number at the beginning, special character, hyphen are not allowed when naming a variable. A variable can have a short name (like x, y, z), but a more descriptive name (firstname, lastname, age, country) is highly recommended.
+
+Python Variable Name Rules
+
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive (firstname, Firstname, FirstName and FIRSTNAME) are different variables)
+Here are some example of valid variable names:
+
+firstname
+lastname
+age
+country
+city
+first_name
+last_name
+capital_city
+_if # if we want to use reserved word as a variable
+year_2021
+year2021
+current_year_2021
+birth_year
+num1
+num2
+Invalid variables names
+
+first-name
+first@name
+first$name
+num-1
+1num
+We will use standard Python variable naming style which has been adopted by many Python developers. Python developers use snake case(snake_case) variable naming convention. We use underscore character after each word for a variable containing more than one word(eg. first_name, last_name, engine_rotation_speed). The example below is an example of standard naming of variables, underscore is required when the variable name is more than one word.
+
+When we assign a certain data type to a variable, it is called variable declaration. For instance in the example below my first name is assigned to a variable first_name. The equal sign is an assignment operator. Assigning means storing data in the variable. The equal sign in Python is not equality as in Mathematics.
+
+Example:
+
+# Variables in Python
+first_name = 'Asabeneh'
+last_name = 'Yetayeh'
+country = 'Finland'
+city = 'Helsinki'
+age = 250
+is_married = True
+skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
+person_info = {
+   'firstname':'Asabeneh',
+   'lastname':'Yetayeh',
+   'country':'Finland',
+   'city':'Helsinki'
+   }
+Let us use the print() and len() built-in functions. Print function takes unlimited number of arguments. An argument is a value which we can be passed or put inside the function parenthesis, see the example below.
+
+Example:
+
+print('Hello, World!') # The text Hello, World! is an argument
+print('Hello',',', 'World','!') # it can take multiple arguments, four arguments have been passed
+print(len('Hello, World!')) # it takes only one argument
+Let us print and also find the length of the variables declared at the top:
+
+Example:
+
+# Printing the values stored in the variables
+
+print('First name:', first_name)
+print('First name length:', len(first_name))
+print('Last name: ', last_name)
+print('Last name length: ', len(last_name))
+print('Country: ', country)
+print('City: ', city)
+print('Age: ', age)
+print('Married: ', is_married)
+print('Skills: ', skills)
+print('Person information: ', person_info)
+Declaring Multiple Variable in a Line
+Multiple variables can also be declared in one line:
+
+Example:
+
+first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+
+print(first_name, last_name, country, age, is_married)
+print('First name:', first_name)
+print('Last name: ', last_name)
+print('Country: ', country)
+print('Age: ', age)
+print('Married: ', is_married)
+Getting user input using the input() built-in function. Let us assign the data we get from a user into first_name and age variables. Example:
+
+first_name = input('What is your name: ')
+age = input('How old are you? ')
+
+print(first_name)
+print(age)
+Data Types
+There are several data types in Python. To identify the data type we use the type built-in function. I would like to ask you to focus on understanding different data types very well. When it comes to programming, it is all about data types. I introduced data types at the very beginning and it comes again, because every topic is related to data types. We will cover data types in more detail in their respective sections.
+
+Checking Data types and Casting
+Check Data types: To check the data type of certain data/variable we use the type Examples:
+# Different python data types
+# Let's declare variables with various data types
+
+first_name = 'Asabeneh'     # str
+last_name = 'Yetayeh'       # str
+country = 'Finland'         # str
+city= 'Helsinki'            # str
+age = 250                   # int, it is not my real age, don't worry about it
+
+# Printing out types
+print(type('Asabeneh'))          # str
+print(type(first_name))          # str
+print(type(10))                  # int
+print(type(3.14))                # float
+print(type(1 + 1j))              # complex
+print(type(True))                # bool
+print(type([1, 2, 3, 4]))        # list
+print(type({'name':'Asabeneh'})) # dict
+print(type((1,2)))               # tuple
+print(type(zip([1,2],[3,4])))    # zip
+Casting: Converting one data type to another data type. We use int(), float(), str(), list, set When we do arithmetic operations string numbers should be first converted to int or float otherwise it will return an error. If we concatenate a number with a string, the number should be first converted to a string. We will talk about concatenation in String section.
+
+Examples:
+
+# int to float
+num_int = 10
+print('num_int',num_int)         # 10
+num_float = float(num_int)
+print('num_float:', num_float)   # 10.0
+
+# float to int
+gravity = 9.81
+print(int(gravity))             # 9
+
+# int to str
+num_int = 10
+print(num_int)                  # 10
+num_str = str(num_int)
+print(num_str)                  # '10'
+
+# str to int or float
+num_str = '10.6'
+num_float = float(num_str)
+print('num_float', float(num_str))  # 10.6
+num_int = int(num_float)
+print('num_int', int(num_int))      # 10
+
+# str to list
+first_name = 'Asabeneh'
+print(first_name)               # 'Asabeneh'
+first_name_to_list = list(first_name)
+print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
+Numbers
+Number data types in Python:
+
+Integers: Integer(negative, zero and positive) numbers Example: ... -3, -2, -1, 0, 1, 2, 3 ...
+
+Floating Point Numbers(Decimal numbers) Example: ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
+
+Complex Numbers Example: 1 + j, 2 + 4j, 1 - 1j
+
+
+# Arithmetic Operations in Python
+# Integers
+
+print('Addition: ', 1 + 2)
+print('Subtraction: ', 2 - 1)
+print('Multiplication: ', 2 * 3)
+print ('Division: ', 4 / 2)                         # Division in python gives floating number
+print('Division: ', 6 / 2)
+print('Division: ', 7 / 2)
+print('Division without the remainder: ', 7 // 2)   # gives without the floating number or without the remaining
+print('Modulus: ', 3 % 2)                           # Gives the remainder
+print ('Division without the remainder: ', 7 // 3)
+print('Exponential: ', 3 ** 2)                     # it means 3 * 3
+
+# Floating numbers
+print('Floating Number,PI', 3.14)
+print('Floating Number, gravity', 9.81)
+
+# Complex numbers
+print('Complex number: ', 1 + 1j)
+print('Multiplying complex number: ',(1 + 1j) * (1-1j))
+
+# Declaring the variable at the top first
+
+a = 3 # a is a variable name and 3 is an integer data type
+b = 2 # b is a variable name and 3 is an integer data type
+
+# Arithmetic operations and assigning the result to a variable
+total = a + b
+diff = a - b
+product = a * b
+division = a / b
+remainder = a % b
+floor_division = a // b
+exponential = a ** b
+
+# I should have used sum instead of total but sum is a built-in function try to avoid overriding builtin functions
+print(total) # if you don't label your print with some string, you never know from where is  the result is coming
+print('a + b = ', total)
+print('a - b = ', diff)
+print('a * b = ', product)
+print('a / b = ', division)
+print('a % b = ', remainder)
+print('a // b = ', floor_division)
+print('a ** b = ', exponential)
+
+# Declaring values and organizing them together
+num_one = 3
+num_two = 4
+
+# Arithmetic operations
+total = num_one + num_two
+diff = num_two - num_one
+product = num_one * num_two
+div = num_two / num_two
+remainder = num_two % num_one
+
+# Printing values with label
+print('total: ', total)
+print('difference: ', diff)
+print('product: ', product)
+print('division: ', div)
+print('remainder: ', remainder)
+
+
+# Calculating area of a circle
+radius = 10                                 # radius of a circle
+area_of_circle = 3.14 * radius ** 2         # two * sign means exponent or power
+print('Area of a circle:', area_of_circle)
+
+# Calculating area of a rectangle
+length = 10
+width = 20
+area_of_rectangle = length * width
+print('Area of rectangle:', area_of_rectangle)
+
+# Calculating a weight of an object
+mass = 75
+gravity = 9.81
+weight = mass * gravity
+print(weight, 'N')
+
+print(3 > 2)     # True, because 3 is greater than 2
+print(3 >= 2)    # True, because 3 is greater than 2
+print(3 < 2)     # False,  because 3 is greater than 2
+print(2 < 3)     # True, because 2 is less than 3
+print(2 <= 3)    # True, because 2 is less than 3
+print(3 == 2)    # False, because 3 is not equal to 2
+print(3 != 2)    # True, because 3 is not equal to 2
+print(len('mango') == len('avocado'))  # False
+print(len('mango') != len('avocado'))  # True
+print(len('mango') < len('avocado'))   # True
+print(len('milk') != len('meat'))      # False
+print(len('milk') == len('meat'))      # True
+print(len('tomato') == len('potato'))  # True
+print(len('python') > len('dragon'))   # False
+
+# Boolean comparison
+print('True == True: ', True == True)
+print('True == False: ', True == False)
+print('False == False:', False == False)
+print('True and True: ', True and True)
+print('True or False:', True or False)
+
+# Another way comparison 
+print('1 is 1', 1 is 1)                   # True - because the data values are the same
+print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
+print('A in Asabeneh', 'A' in 'Asabeneh') # True - A found in the string
+print('B in Asabeneh', 'B' in 'Asabeneh') # False -there is no uppercase B
+print('coding' in 'coding for all') # True - because coding for all has the word coding
+print('a in an:', 'a' in 'an')      # True
+print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
+
+print(3 > 2 and 4 > 3) # True - because both statements are true
+print(3 > 2 and 4 < 3) # False - because the second statement is false
+print(3 < 2 and 4 < 3) # False - because both statements are false
+print(3 > 2 or 4 > 3)  # True - because both statements are true
+print(3 > 2 or 4 < 3)  # True - because one of the statement is true
+print(3 < 2 or 4 < 3)  # False - because both statements are false
+print(not 3 > 2)     # False - because 3 > 2 is true, then not True gives False
+print(not True)      # False - Negation, the not operator turns true to false
+print(not False)     # True
+print(not not True)  # True
+print(not not False) # False
+
+
+# Single line comment
+letter = 'P'                # A string could be a single character or a bunch of texts
+print(letter)               # P
+print(len(letter))          # 1
+greeting = 'Hello, World!'  # String could be  a single or double quote,"Hello, World!"
+print(greeting)             # Hello, World!
+print(len(greeting))        # 13
+sentence = "I hope you are enjoying 30 days of python challenge"
+print(sentence)
+
+# Multiline String
+multiline_string = '''I am a teacher and enjoy teaching.
+I didn't find anything as rewarding as empowering people.
+That is why I created 30 days of python.'''
+print(multiline_string)
+# Another way of doing the same thing
+multiline_string = """I am a teacher and enjoy teaching.
+I didn't find anything as rewarding as empowering people.
+That is why I created 30 days of python."""
+print(multiline_string)
+
+# String Concatenation
+first_name = 'Asabeneh'
+last_name = 'Yetayeh'
+space = ' '
+full_name = first_name  +  space + last_name
+print(full_name) # Asabeneh Yetayeh
+# Checking length of a string using len() builtin function
+print(len(first_name))  # 8
+print(len(last_name))   # 7
+print(len(first_name) > len(last_name)) # True
+print(len(full_name)) # 15
+
+#### Unpacking characters 
+language = 'Python'
+a,b,c,d,e,f = language # unpacking sequence characters into variables
+print(a) # P
+print(b) # y
+print(c) # t 
+print(d) # h
+print(e) # o
+print(f) # n
+
+# Accessing characters in strings by index
+language = 'Python'
+first_letter = language[0]
+print(first_letter) # P
+second_letter = language[1]
+print(second_letter) # y
+last_index = len(language) - 1
+last_letter = language[last_index]
+print(last_letter) # n
+
+# If we want to start from right end we can use negative indexing. -1 is the last index
+language = 'Python'
+last_letter = language[-1]
+print(last_letter) # n
+second_last = language[-2]
+print(second_last) # o
+
+# Slicing
+
+language = 'Python'
+first_three = language[0:3] # starts at zero index and up to 3 but not include 3
+last_three = language[3:6]
+print(last_three) # hon
+# Another way
+last_three = language[-3:]
+print(last_three)   # hon
+last_three = language[3:]
+print(last_three)   # hon
+
+# Skipping character while splitting Python strings
+language = 'Python'
+pto = language[0:6:2] # 
+print(pto) # pto
+
+# Escape sequence
+print('I hope every one enjoying the python challenge.\nDo you ?') # line break
+print('Days\tTopics\tExercises')
+print('Day 1\t3\t5')
+print('Day 2\t3\t5')
+print('Day 3\t3\t5')
+print('Day 4\t3\t5')
+print('This is a back slash  symbol (\\)') # To write a back slash
+print('In every programming language it starts with \"Hello, World!\"')
+
+## String Methods
+# capitalize(): Converts the first character the string to Capital Letter
+
+challenge = 'thirty days of python'
+print(challenge.capitalize()) # 'Thirty days of python'
+
+# count(): returns occurrences of substring in string, count(substring, start=.., end=..)
+
+challenge = 'thirty days of python'
+print(challenge.count('y')) # 3
+print(challenge.count('y', 7, 14)) # 1
+print(challenge.count('th')) # 2`
+
+# endswith(): Checks if a string ends with a specified ending
+
+challenge = 'thirty days of python'
+print(challenge.endswith('on'))   # True
+print(challenge.endswith('tion')) # False
+
+# expandtabs(): Replaces tab character with spaces, default tab size is 8. It takes tab size argument
+
+challenge = 'thirty\tdays\tof\tpython'
+print(challenge.expandtabs())   # 'thirty  days    of      python'
+print(challenge.expandtabs(10)) # 'thirty    days      of        python'
+
+# find(): Returns the index of first occurrence of substring
+
+challenge = 'thirty days of python'
+print(challenge.find('y'))  # 5
+print(challenge.find('th')) # 0
+
+# format()	formats string into nicer output    
+first_name = 'Asabeneh'
+last_name = 'Yetayeh'
+job = 'teacher'
+country = 'Finland'
+sentence = 'I am {} {}. I am a {}. I live in {}.'.format(first_name, last_name, job, country)
+print(sentence) # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
+
+radius = 10
+pi = 3.14
+area = pi # radius ## 2
+result = 'The area of circle with {} is {}'.format(str(radius), str(area))
+print(result) # The area of circle with 10 is 314.0
+
+# index(): Returns the index of substring
+challenge = 'thirty days of python'
+print(challenge.find('y'))  # 5
+print(challenge.find('th')) # 0
+
+# isalnum(): Checks alphanumeric character
+
+challenge = 'ThirtyDaysPython'
+print(challenge.isalnum()) # True
+
+challenge = '30DaysPython'
+print(challenge.isalnum()) # True
+
+challenge = 'thirty days of python'
+print(challenge.isalnum()) # False
+
+challenge = 'thirty days of python 2019'
+print(challenge.isalnum()) # False
+
+# isalpha(): Checks if all characters are alphabets
+
+challenge = 'thirty days of python'
+print(challenge.isalpha()) # True
+num = '123'
+print(num.isalpha())      # False
+
+# isdecimal(): Checks Decimal Characters
+
+challenge = 'thirty days of python'
+print(challenge.find('y'))  # 5
+print(challenge.find('th')) # 0
+
+# isdigit(): Checks Digit Characters
+
+challenge = 'Thirty'
+print(challenge.isdigit()) # False
+challenge = '30'
+print(challenge.digit())   # True
+
+# isdecimal():Checks decimal characters
+
+num = '10'
+print(num.isdecimal()) # True
+num = '10.5'
+print(num.isdecimal()) # False
+
+
+# isidentifier():Checks for valid identifier means it check if a string is a valid variable name
+
+challenge = '30DaysOfPython'
+print(challenge.isidentifier()) # False, because it starts with a number
+challenge = 'thirty_days_of_python'
+print(challenge.isidentifier()) # True
+
+
+# islower():Checks if all alphabets in a string are lowercase
+
+challenge = 'thirty days of python'
+print(challenge.islower()) # True
+challenge = 'Thirty days of python'
+print(challenge.islower()) # False
+
+# isupper(): returns if all characters are uppercase characters
+
+challenge = 'thirty days of python'
+print(challenge.isupper()) #  False
+challenge = 'THIRTY DAYS OF PYTHON'
+print(challenge.isupper()) # True
+
+
+# isnumeric():Checks numeric characters
+
+num = '10'
+print(num.isnumeric())      # True
+print('ten'.isnumeric())    # False
+
+# join(): Returns a concatenated string
+
+web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
+result = '#, '.join(web_tech)
+print(result) # 'HTML# CSS# JavaScript# React'
+
+# strip(): Removes both leading and trailing characters
+
+challenge = ' thirty days of python '
+print(challenge.strip('y')) # 5
+
+# replace(): Replaces substring inside
+
+challenge = 'thirty days of python'
+print(challenge.replace('python', 'coding')) # 'thirty days of coding'
+
+# split():Splits String from Left
+
+challenge = 'thirty days of python'
+print(challenge.split()) # ['thirty', 'days', 'of', 'python']
+
+# title(): Returns a Title Cased String
+
+challenge = 'thirty days of python'
+print(challenge.title()) # Thirty Days Of Python
+
+# swapcase(): Checks if String Starts with the Specified String
+  
+challenge = 'thirty days of python'
+print(challenge.swapcase())   # THIRTY DAYS OF PYTHON
+challenge = 'Thirty Days Of Python'
+print(challenge.swapcase())  # tHIRTY dAYS oF pYTHON
+
+# startswith(): Checks if String Starts with the Specified String
+
+challenge = 'thirty days of python'
+print(challenge.startswith('thirty')) # True
+challenge = '30 days of python'
+print(challenge.startswith('thirty')) # False
+
+empty_list = list() # this is an empty list, no item in the list
+print(len(empty_list)) # 0
+
+fruits = ['banana', 'orange', 'mango', 'lemon']                     # list of fruits
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']      # list of vegetables
+animal_products = ['milk', 'meat', 'butter', 'yoghurt']             # list of animal products
+web_techs = ['HTML', 'CSS', 'JS', 'React','Redux', 'Node', 'MongDB'] # list of web technologies
+countries = ['Finland', 'Estonia', 'Denmark', 'Sweden', 'Norway']
+
+# Print the lists and it length
+print('Fruits:', fruits)
+print('Number of fruits:', len(fruits))
+print('Vegetables:', vegetables)
+print('Number of vegetables:', len(vegetables))
+print('Animal products:',animal_products)
+print('Number of animal products:', len(animal_products))
+print('Web technologies:', web_techs)
+print('Number of web technologies:', len(web_techs))
+print('Number of countries:', len(countries))
+
+# Modifying list
+
+fruits = ['banana', 'orange', 'mango', 'lemon'] 
+first_fruit = fruits[0] # we are accessing the first item using its index
+print(first_fruit)      # banana
+second_fruit = fruits[1]
+print(second_fruit)     # orange
+last_fruit = fruits[3]
+print(last_fruit) # lemon
+# Last index
+last_index = len(fruits) - 1
+last_fruit = fruits[last_index]
+
+# Accessing items
+fruits = ['banana', 'orange', 'mango', 'lemon'] 
+last_fruit = fruits[-1]
+second_last = fruits[-2]
+print(last_fruit)       # lemon
+print(second_last)      # mango
+
+# Slicing items
+fruits = ['banana', 'orange', 'mango', 'lemon'] 
+all_fruits = fruits[0:4] # it returns all the fruits
+# this is also give the same result as the above
+all_fruits = fruits[0:] # if we don't set where to stop it takes all the rest
+orange_and_mango = fruits[1:3] # it does not include the end index
+orange_mango_lemon = fruits[1:]
+
+fruits = ['banana', 'orange', 'mango', 'lemon'] 
+all_fruits = fruits[-4:] # it returns all the fruits
+# this is also give the same result as the above
+orange_and_mango = fruits[-3:-1] # it does not include the end index
+orange_mango_lemon = fruits[-3:]
+
+
+fruits = ['banana', 'orange', 'mango', 'lemon'] 
+fruits[0] = 'Avocado' 
+print(fruits)       #  ['avocado', 'orange', 'mango', 'lemon']
+fruits[1] = 'apple'
+print(fruits)       #  ['avocado', 'apple', 'mango', 'lemon']
+last_index = len(fruits) - 1
+fruits[last_index] = 'lime'
+print(fruits)        #  ['avocado', 'apple', 'mango', 'lime']
+
+# checking items
+fruits = ['banana', 'orange', 'mango', 'lemon']
+does_exist = 'banana' in fruits
+print(does_exist)  # True
+does_exist = 'lime' in fruits
+print(does_exist)  # False
+
+# Append
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.append('apple')
+print(fruits)           # ['banana', 'orange', 'mango', 'lemon', 'apple']
+fruits.append('lime')   # ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime]
+print(fruits)
+
+# insert
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.insert(2, 'apple') # insert apple between orange and mango
+print(fruits)           # ['banana', 'orange', 'apple', 'mango', 'lemon']
+fruits.insert(3, 'lime')   # ['banana', 'orange', 'apple', 'mango', 'lime','lemon',]
+print(fruits)
+
+# remove
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.remove('banana')
+print(fruits)  # ['orange', 'mango', 'lemon']
+fruits.remove('lemon')
+print(fruits)  # ['orange', 'mango']
+
+# pop
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.pop()     
+print(fruits)       # ['banana', 'orange', 'mango']
+
+fruits.pop(0)     
+print(fruits)       # ['orange', 'mango'] 
+
+# del 
+fruits = ['banana', 'orange', 'mango', 'lemon']
+del fruits[0]     
+print(fruits)       # ['orange', 'mango', 'lemon']
+
+del fruits[1]     
+print(fruits)       # ['orange', 'lemon']
+del fruits
+print(fruits)       # This should give: NameError: name 'fruits' is not defined
+
+# clear
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.clear()     
+print(fruits)       # []
+
+# copying a lits
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits_copy = fruits.copy()     
+print(fruits_copy)       # ['banana', 'orange', 'mango', 'lemon']
+
+# join
+positive_numbers = [1, 2, 3,4,5]
+zero = [0]
+negative_numbers = [-5,-4,-3,-2,-1]
+integers = negative_numbers + zero + positive_numbers
+print(integers)
+fruits = ['banana', 'orange', 'mango', 'lemon']
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot'] 
+fruits_and_vegetables = fruits + vegetables
+print(fruits_and_vegetables )
+
+# join with extend
+num1 = [0, 1, 2, 3]
+num2= [4, 5,6]
+num1.extend(num2)
+print('Numbers:', num1)
+negative_numbers = [-5,-4,-3,-2,-1]
+positive_numbers = [1, 2, 3,4,5]
+zero = [0]
+
+negative_numbers.extend(zero)
+negative_numbers.extend(positive_numbers)
+print('Integers:', negative_numbers)
+fruits = ['banana', 'orange', 'mango', 'lemon']
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot'] 
+fruits.extend(vegetables)
+print('Fruits and vegetables:', fruits )
+
+# count
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits.count('orange'))   # 1
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(ages.count(24))           # 3
+
+# index
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits.index('orange'))   # 1
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(ages.index(24)) 
+# Reverse
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.reverse()
+print(fruits)  
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.reverse()
+print(ages) 
+
+# sort
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.sort()
+print(fruits) 
+fruits.sort(reverse=True)
+print(fruits)
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages) 
+ages.sort(reverse=True)
+print(ages) 
+
+
+Tuples
+A tuple is a collection of different data types which is ordered and unchangeable (immutable). Tuples are written with round brackets, (). Once a tuple is created, we cannot change its values. We cannot use add, insert, remove methods in a tuple because it is not modifiable (mutable). Unlike list, tuple has few methods. Methods related to tuples:
+
+tuple(): to create an empty tuple
+count(): to count the number of a specified item in a tuple
+index(): to find the index of a specified item in a tuple
+operator: to join two or more tuples and to create a new tuple
+Creating a Tuple
+Empty tuple: Creating an empty tuple
+
+# syntax
+empty_tuple = ()
+# or using the tuple constructor
+empty_tuple = tuple()
+Tuple with initial values
+
+# syntax
+tpl = ('item1', 'item2','item3')
+fruits = ('banana', 'orange', 'mango', 'lemon')
+Tuple length
+We use the len() method to get the length of a tuple.
+
+# syntax
+tpl = ('item1', 'item2', 'item3')
+len(tpl)
+Accessing Tuple Items
+Positive Indexing Similar to the list data type we use positive or negative indexing to access tuple items. Accessing tuple items
+
+# Syntax
+tpl = ('item1', 'item2', 'item3')
+first_item = tpl[0]
+second_item = tpl[1]
+fruits = ('banana', 'orange', 'mango', 'lemon')
+first_fruit = fruits[0]
+second_fruit = fruits[1]
+last_index =len(fruits) - 1
+last_fruit = fruits[las_index]
+Negative indexing Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last and the negative of the list/tuple length refers to the first item. Tuple Negative indexing
+
+# Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+first_item = tpl[-4]
+second_item = tpl[-3]
+fruits = ('banana', 'orange', 'mango', 'lemon')
+first_fruit = fruits[-4]
+second_fruit = fruits[-3]
+last_fruit = fruits[-1]
+Slicing tuples
+We can slice out a sub-tuple by specifying a range of indexes where to start and where to end in the tuple, the return value will be a new tuple with the specified items.
+
+Range of Positive Indexes
+
+# Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+all_items = tpl[0:4]         # all items
+all_items = tpl[0:]         # all items
+middle_two_items = tpl[1:3]  # does not include item at index 3
+fruits = ('banana', 'orange', 'mango', 'lemon')
+all_fruits = fruits[0:4]    # all items
+all_fruits= fruits[0:]      # all items
+orange_mango = fruits[1:3]  # doesn't include item at index 3
+orange_to_the_rest = fruits[1:]
+Range of Negative Indexes
+
+# Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+all_items = tpl[-4:]         # all items
+middle_two_items = tpl[-3:-1]  # does not include item at index 3 (-1)
+fruits = ('banana', 'orange', 'mango', 'lemon')
+all_fruits = fruits[-4:]    # all items
+orange_mango = fruits[-3:-1]  # doesn't include item at index 3
+orange_to_the_rest = fruits[-3:]
+Changing Tuples to Lists
+We can change tuples to lists and lists to tuples. Tuple is immutable if we want to modify a tuple we should change it to a list.
+
+# Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+lst = list(tpl)
+fruits = ('banana', 'orange', 'mango', 'lemon')
+fruits = list(fruits)
+fruits[0] = 'apple'
+print(fruits)     # ['apple', 'orange', 'mango', 'lemon']
+fruits = tuple(fruits)
+print(fruits)     # ('apple', 'orange', 'mango', 'lemon')
+Checking an Item in a Tuple
+We can check if an item exists or not in a tuple using in, it returns a boolean.
+
+# Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+'item2' in tpl # True
+fruits = ('banana', 'orange', 'mango', 'lemon')
+print('orange' in fruits) # True
+print('apple' in fruits) # False
+fruits[0] = 'apple' # TypeError: 'tuple' object does not support item assignment
+Joining Tuples
+We can join two or more tuples using + operator
+
+# syntax
+tpl1 = ('item1', 'item2', 'item3')
+tpl2 = ('item4', 'item5','item6')
+tpl3 = tpl1 + tpl2
+fruits = ('banana', 'orange', 'mango', 'lemon')
+vegetables = ('Tomato', 'Potato', 'Cabbage','Onion', 'Carrot')
+fruits_and_vegetables = fruits + vegetables
+Deleting Tuples
+It is not possible to remove a single item in a tuple but it is possible to delete the tuple itself using del.
+
+# syntax
+tpl1 = ('item1', 'item2', 'item3')
+del tpl1
+fruits = ('banana', 'orange', 'mango', 'lemon')
+del fruits
+🌕 You are so brave, you made it to this far. You have just completed day 6 challenges and you are 6 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
+
+💻 Exercises: Day 6
+Exercises: Level 1
+Create an empty tuple
+Create a tuple containing names of your sisters and your brothers (imaginary siblings are fine)
+Join brothers and sisters tuples and assign it to siblings
+How many siblings do you have?
+Modify the siblings tuple and add the name of your father and mother and assign it to family_members
+Exercises: Level 2
+Unpack siblings and parents from family_members
+Create fruits, vegetables and animal products tuples. Join the three tuples and assign it to a variable called food_stuff_tp.
+Change the about food_stuff_tp tuple to a food_stuff_lt list
+Slice out the middle item or items from the food_stuff_tp tuple or food_stuff_lt list.
+Slice out the first three items and the last three items from food_staff_lt list
+Delete the food_staff_tp tuple completely
+Check if an item exists in tuple:
+Check if 'Estonia' is a nordic country
+
+Check if 'Iceland' is a nordic country
+
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+
+
+Sets
+Set is a collection of items. Let me take you back to your elementary or high school Mathematics lesson. The Mathematics definition of a set can be applied also in Python. Set is a collection of unordered and un-indexed distinct elements. In Python set is used to store unique items, and it is possible to find the union, intersection, difference, symmetric difference, subset, super set and disjoint set among sets.
+
+Creating a Set
+We use the set() built-in function.
+
+Creating an empty set
+# syntax
+st = set()
+Creating a set with initial items
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+Example:
+
+# syntax
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+Getting Set's Length
+We use len() method to find the length of a set.
+
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+len(st)
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+len(fruits)
+Accessing Items in a Set
+We use loops to access items. We will see this in loop section
+
+Checking an Item
+To check if an item exist in a list we use in membership operator.
+
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+print("Does set st contain item3? ", 'item3' in st) # Does set st contain item3? True
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+print('mango' in fruits ) # True
+Adding Items to a Set
+Once a set is created we cannot change any items and we can also add additional items.
+
+Add one item using add()
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+st.add('item5')
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.add('lime')
+Add multiple items using update() The update() allows to add multiple items to a set. The update() takes a list argument.
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+st.update(['item5','item6','item7'])
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = ('tomato', 'potato', 'cabbage','onion', 'carrot')
+fruits.update(vegetables)
+Removing Items from a Set
+We can remove an item from a set using remove() method. If the item is not found remove() method will raise errors, so it is good to check if the item exist in the given set. However, discard() method doesn't raise any errors.
+
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+st.remove('item2')
+The pop() methods remove a random item from a list and it returns the removed item.
+
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.pop()  # removes a random item from the set
+If we are interested in the removed item.
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+removed_item = fruits.pop() 
+Clearing Items in a Set
+If we want to clear or empty the set we use clear method.
+
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+st.clear()
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.clear()
+print(fruits) # set()
+Deleting a Set
+If we want to delete the set itself we use del operator.
+
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+del st
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+del fruits
+Converting List to Set
+We can convert list to set and set to list. Converting list to set removes duplicates and only unique items will be reserved.
+
+# syntax
+lst = ['item1', 'item2', 'item3', 'item4', 'item1']
+st = set(lst)  # {'item2', 'item4', 'item1', 'item3'} - the order is random, because sets in general are unordered
+Example:
+
+fruits = ['banana', 'orange', 'mango', 'lemon','orange', 'banana']
+fruits = set(fruits) # {'mango', 'lemon', 'banana', 'orange'}
+Joining Sets
+We can join two sets using the union() or update() method.
+
+Union This method returns a new set
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item5', 'item6', 'item7', 'item8'}
+st3 = st1.union(st2)
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
+print(fruits.union(vegetables)) # {'lemon', 'carrot', 'tomato', 'banana', 'mango', 'orange', 'cabbage', 'potato', 'onion'}
+Update This method inserts a set into a given set
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item5', 'item6', 'item7', 'item8'}
+st1.update(st2) # st2 contents are added to st1
+Example:
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
+fruits.update(vegetables)
+print(fruits) # {'lemon', 'carrot', 'tomato', 'banana', 'mango', 'orange', 'cabbage', 'potato', 'onion'}
+Finding Intersection Items
+Intersection returns a set of items which are in both the sets. See the example
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item3', 'item2'}
+st1.intersection(st2) # {'item3', 'item2'}
+Example:
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.intersection(even_numbers) # {0, 2, 4, 6, 8, 10}
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.intersection(dragon)     # {'o', 'n'}
+Checking Subset and Super Set
+A set can be a subset or super set of other sets:
+
+Subset: issubset()
+Super set: issuperset
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+st2.issubset(st1) # True
+st1.issuperset(st2) # True
+Example:
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.issubset(even_numbers) # False, because it is a super set
+whole_numbers.issuperset(even_numbers) # True
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.issubset(dragon)     # False
+Checking the Difference Between Two Sets
+It returns the difference between two sets.
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+st2.difference(st1) # set()
+st1.difference(st2) # {'item1', 'item4'} => st1\st2
+Example:
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.difference(even_numbers) # {1, 3, 5, 7, 9}
+
+python = {'p', 'y', 't', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.difference(dragon)     # {'p', 'y', 't'}  - the result is unordered (characteristic of sets)
+dragon.difference(python)     # {'d', 'r', 'a', 'g'}
+Finding Symmetric Difference Between Two Sets
+It returns the symmetric difference between two sets. It means that it returns a set that contains all items from both sets, except items that are present in both sets, mathematically: (A\B) ∪ (B\A)
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+# it means (A\B)∪(B\A)
+st2.symmetric_difference(st1) # {'item1', 'item4'}
+Example:
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+some_numbers = {1, 2, 3, 4, 5}
+whole_numbers.symmetric_difference(some_numbers) # {0, 6, 7, 8, 9, 10}
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.symmetric_difference(dragon)  # {'r', 't', 'p', 'y', 'g', 'a', 'd', 'h'}
+Joining Sets
+If two sets do not have a common item or items we call them disjoint sets. We can check if two sets are joint or disjoint using isdisjoint() method.
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+st2.isdisjoint(st1) # False
+Example:
+
+even_numbers = {0, 2, 4 ,6, 8}
+odd_numbers = {1, 3, 5, 7, 9}
+even_numbers.isdisjoint(odd_numbers) # True, because no common item
+
+python = {'p', 'y', 't', 'h', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.isdisjoint(dragon)  # False, there are common items {'o', 'n'}
+🌕 You are a rising star . You have just completed day 7 challenges and you are 7 steps ahead in to your way to greatness. Now do some exercises for your brain and muscles.
+
+💻 Exercises: Day 7
+# sets
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+Exercises: Level 1
+Find the length of the set it_companies
+Add 'Twitter' to it_companies
+Insert multiple IT companies at once to the set it_companies
+Remove one of the companies from the set it_companies
+What is the difference between remove and discard
+Exercises: Level 2
+Join A and B
+Find A intersection B
+Is A subset of B
+Are A and B disjoint sets
+Join A with B and B with A
+What is the symmetric difference between A and B
+Delete the sets completely
+Exercises: Level 3
+Convert the ages to a set and compare the length of the list and the set, which one is bigger?
+Explain the difference between the following data types: string, list, tuple and set
+I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+
+Dictionaries
+A dictionary is a collection of unordered, modifiable(mutable) paired (key: value) data type.
+
+Creating a Dictionary
+To create a dictionary we use curly brackets, {} or the dict() built-in function.
+
+# syntax
+empty_dict = {}
+# Dictionary with data values
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+Example:
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+The dictionary above shows that a value could be any data types:string, boolean, list, tuple, set or a dictionary.
+
+Dictionary Length
+It checks the number of 'key: value' pairs in the dictionary.
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print(len(dct)) # 4
+Example:
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_married':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+print(len(person)) # 7
+Accessing Dictionary Items
+We can access Dictionary items by referring to its key name.
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print(dct['key1']) # value1
+print(dct['key4']) # value4
+Example:
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+print(person['first_name']) # Asabeneh
+print(person['country'])    # Finland
+print(person['skills'])     # ['JavaScript', 'React', 'Node', 'MongoDB', 'Python']
+print(person['skills'][0])  # JavaScript
+print(person['address']['street']) # Space street
+print(person['city'])       # Error
+Accessing an item by key name raises an error if the key does not exist. To avoid this error first we have to check if a key exist or we can use the get method. The get method returns None, which is a NoneType object data type, if the key does not exist.
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+print(person.get('first_name')) # Asabeneh
+print(person.get('country'))    # Finland
+print(person.get('skills')) #['HTML','CSS','JavaScript', 'React', 'Node', 'MongoDB', 'Python']
+print(person.get('city'))   # None
+Adding Items to a Dictionary
+We can add new key and value pairs to a dictionary
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct['key5'] = 'value5'
+Example:
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+        }
+}
+person['job_title'] = 'Instructor'
+person['skills'].append('HTML')
+print(person)
+Modifying Items in a Dictionary
+We can modify items in a dictionary
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct['key1'] = 'value-one'
+Example:
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+person['first_name'] = 'Eyob'
+person['age'] = 252
+Checking Keys in a Dictionary
+We use the in operator to check if a key exist in a dictionary
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print('key2' in dct) # True
+print('key5' in dct) # False
+Removing Key and Value Pairs from a Dictionary
+pop(key): removes the item with the specified key name:
+popitem(): removes the last item
+del: removes an item with specified key name
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct.pop('key1') # removes key1 item
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct.popitem() # removes the last item
+del dct['key2'] # removes key2 item
+Example:
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+person.pop('first_name')        # Removes the firstname item
+person.popitem()                # Removes the address item
+del person['is_married']        # Removes the is_married item
+Changing Dictionary to a List of Items
+The items() method changes dictionary to a list of tuples.
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print(dct.items()) # dict_items([('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), ('key4', 'value4')])
+Clearing a Dictionary
+If we don't want the items in a dictionary we can clear them using clear() method
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print(dct.clear()) # None
+Deleting a Dictionary
+If we do not use the dictionary we can delete it completely
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+del dct
+Copy a Dictionary
+We can copy a dictionary using a copy() method. Using copy we can avoid mutation of the original dictionary.
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct_copy = dct.copy() # {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+Getting Dictionary Keys as a List
+The keys() method gives us all the keys of a a dictionary as a list.
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+keys = dct.keys()
+print(keys)     # dict_keys(['key1', 'key2', 'key3', 'key4'])
+Getting Dictionary Values as a List
+The values method gives us all the values of a a dictionary as a list.
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+values = dct.values()
+print(values)     # dict_values(['value1', 'value2', 'value3', 'value4'])
+🌕 You are astonishing. Now, you are super charged with the power of dictionaries. You have just completed day 8 challenges and you are 8 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+
+💻 Exercises: Day 8
+Create an empty dictionary called dog
+Add name, color, breed, legs, age to the dog dictionary
+Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
+Get the length of the student dictionary
+Get the value of skills and check the data type, it should be a list
+Modify the skills values by adding one or two skills
+Get the dictionary keys as a list
+Get the dictionary values as a list
+Change the dictionary to a list of tuples using items() method
+Delete one of the items in the dictionary
+Delete one of the dictionaries
+
+Conditionals
+By default, statements in Python script are executed sequentially from top to bottom. If the processing logic require so, the sequential flow of execution can be altered in two way:
+
+Conditional execution: a block of one or more statements will be executed if a certain expression is true
+Repetitive execution: a block of one or more statements will be repetitively executed as long as a certain expression is true. In this section, we will cover if, else, elif statements. The comparison and logical operators we learned in previous sections will be useful here.
+If Condition
+In python and other programming languages the key word if is used to check if a condition is true and to execute the block code. Remember the indentation after the colon.
+
+# syntax
+if condition:
+    this part of code runs for truthy conditions
+Example: 1
+
+a = 3
+if a > 0:
+    print('A is a positive number')
+# A is a positive number
+As you can see in the example above, 3 is greater than 0. The condition was true and the block code was executed. However, if the condition is false, we do not see the result. In order to see the result of the falsy condition, we should have another block, which is going to be else.
+
+If Else
+If condition is true the first block will be executed, if not the else condition will run.
+
+# syntax
+if condition:
+    this part of code runs for truthy conditions
+else:
+     this part of code runs for false conditions
+Example:
+
+a = 3
+if a < 0:
+    print('A is a negative number')
+else:
+    print('A is a positive number')
+The condition above proves false, therefore the else block was executed. How about if our condition is more than two? We could use elif.
+
+If Elif Else
+In our daily life, we make decisions on daily basis. We make decisions not by checking one or two conditions but multiple conditions. As similar to life, programming is also full of conditions. We use elif when we have multiple conditions.
+
+# syntax
+if condition:
+    code
+elif condition:
+    code
+else:
+    code
+Example:
+
+a = 0
+if a > 0:
+    print('A is a positive number')
+elif a < 0:
+    print('A is a negative number')
+else:
+    print('A is zero')
+Short Hand
+# syntax
+code if condition else code
+Example:
+
+a = 3
+print('A is positive') if a > 0 else print('A is negative') # first condition met, 'A is positive' will be printed
+Nested Conditions
+Conditions can be nested
+
+# syntax
+if condition:
+    code
+    if condition:
+    code
+Example:
+
+a = 0
+if a > 0:
+    if a % 2 == 0:
+        print('A is a positive and even integer')
+    else:
+        print('A is a positive number')
+elif a == 0:
+    print('A is zero')
+else:
+    print('A is a negative number')
+We can avoid writing nested condition by using logical operator and.
+
+If Condition and Logical Operators
+# syntax
+if condition and condition:
+    code
+Example:
+
+a = 0
+if a > 0 and a % 2 == 0:
+        print('A is an even and positive integer')
+elif a > 0 and a % 2 !=  0:
+     print('A is a positive integer')
+elif a == 0:
+    print('A is zero')
+else:
+    print('A is negative')
+If and Or Logical Operators
+# syntax
+if condition or condition:
+    code
+Example:
+
+user = 'James'
+access_level = 3
+if user == 'admin' or access_level >= 4:
+        print('Access granted!')
+else:
+    print('Access denied!')
+🌕 You are doing great.Never give up because great things take time. You have just completed day 9 challenges and you are 9 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+
+💻 Exercises: Day 9
+Exercises: Level 1
+Get user input using input(“Enter your age: ”). If user is 18 or older, give feedback: You are old enough to drive. If below 18 give feedback to wait for the missing amount of years. Output:
+
+Enter your age: 30
+You are old enough to learn to drive.
+Output:
+Enter your age: 15
+You need 3 more years to learn to drive.
+Compare the values of my_age and your_age using if … else. Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. You can use a nested condition to print 'year' for 1 year difference in age, 'years' for bigger differences, and a custom text if my_age = your_age. Output:
+
+Enter your age: 30
+You are 5 years older than me.
+Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, if a is less b return a is smaller than b, else a is equal to b. Output:
+
+Enter number one: 4
+Enter number two: 3
+4 is greater than 3
+Exercises: Level 2
+Write a code which gives grade to students according to theirs scores:
+
+80-100, A
+70-89, B
+60-69, C
+50-59, D
+0-49, F
+Check if the season is Autumn, Winter, Spring or Summer. If the user input is: September, October or November, the season is Autumn. December, January or February, the season is Winter. March, April or May, the season is Spring June, July or August, the season is Summer
+
+The following list contains some fruits:
+
+```sh
+fruits = ['banana', 'orange', 'mango', 'lemon']
+```
+
+If a fruit doesn't exist in the list add the fruit to the list and print the modified list. If the fruit exists print('That fruit already exist in the list')
+Exercises: Level 3
+Here we have a person dictionary. Feel free to modify it!
+        person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+    }
+ * Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
+ * Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
+ * If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
+ * If the person is married and if he lives in Finland, print the information in the following format:
+    Asabeneh Yetayeh lives in Finland. He is married.
+
+
+Loops
+Life is full of routines. In programming we also do lots of repetitive tasks. In order to handle repetitive task programming languages use loops. Python programming language also provides the following types of two loops:
+
+while loop
+for loop
+While Loop
+We use the reserved word while to make a while loop. It is used to execute a block of statements repeatedly until a given condition is satisfied. When the condition becomes false, the lines of code after the loop will be continued to be executed.
+
+  # syntax
+while condition:
+    code goes here
+Example:
+
+count = 0
+while count < 5:
+    print(count)
+    count = count + 1
+#prints from 0 to 4
+In the above while loop, the condition becomes false when count is 5. That is when the loop stops. If we are interested to run block of code once the condition is no longer true, we can use else.
+
+  # syntax
+while condition:
+    code goes here
+else:
+    code goes here
+Example:
+
+count = 0
+while count < 5:
+    print(count)
+    count = count + 1
+else:
+    print(count)
+The above loop condition will be false when count is 5 and the loop stops, and execution starts the else statement. As a result 5 will be printed.
+
+Break and Continue - Part 1
+Break: We use break when we like to get out of or stop the loop.
+# syntax
+while condition:
+    code goes here
+    if another_condition:
+        break
+Example:
+
+count = 0
+while count < 5:
+    print(count)
+    count = count + 1
+    if count == 3:
+        break
+The above while loop only prints 0, 1, 2, but when it reaches 3 it stops.
+
+Continue: With the continue statement we can skip the current iteration, and continue with the next:
+  # syntax
+while condition:
+    code goes here
+    if another_condition:
+        continue
+Example:
+
+count = 0
+while count < 5:
+    if count == 3:
+        count = count + 1
+        continue
+    print(count)
+    count = count + 1
+The above while loop only prints 0, 1, 2 and 4 (skips 3).
+
+For Loop
+A for keyword is used to make a for loop, similar with other programming languages, but with some syntax differences. Loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+For loop with list
+# syntax
+for iterator in lst:
+    code goes here
+Example:
+
+numbers = [0, 1, 2, 3, 4, 5]
+for number in numbers: # number is temporary name to refer to the list's items, valid only inside this loop
+    print(number)       # the numbers will be printed line by line, from 0 to 5
+For loop with string
+# syntax
+for iterator in string:
+    code goes here
+Example:
+
+language = 'Python'
+for letter in language:
+    print(letter)
+
+
+for i in range(len(language)):
+    print(language[i])
+For loop with tuple
+# syntax
+for iterator in tpl:
+    code goes here
+Example:
+
+numbers = (0, 1, 2, 3, 4, 5)
+for number in numbers:
+    print(number)
+For loop with dictionary Looping through a dictionary gives you the key of the dictionary.
+  # syntax
+for iterator in dct:
+    code goes here
+Example:
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+}
+for key in person:
+    print(key)
+
+for key, value in person.items():
+    print(key, value) # this way we get both keys and values printed out
+Loops in set
+# syntax
+for iterator in st:
+    code goes here
+Example:
+
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+for company in it_companies:
+    print(company)
+Break and Continue - Part 2
+Short reminder: Break: We use break when we like to stop our loop before it is completed.
+
+# syntax
+for iterator in sequence:
+    code goes here
+    if condition:
+        break
+Example:
+
+numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        break
+In the above example, the loop stops when it reaches 3.
+
+Continue: We use continue when we like to skip some of the steps in the iteration of the loop.
+
+  # syntax
+for iterator in sequence:
+    code goes here
+    if condition:
+        continue
+Example:
+
+numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        continue
+    print('Next number should be ', number + 1) if number != 5 else print("loop's end") # for short hand conditions need both if and else statements
+print('outside the loop')
+In the example above, if the number equals 3, the step after the condition (but inside the loop) is skipped and the execution of the loop continues if there are any iterations left.
+
+The Range Function
+The range() function is used list of numbers. The range(start, end, step) takes three parameters: starting, ending and increment. By default it starts from 0 and the increment is 1. The range sequence needs at least 1 argument (end). Creating sequences using range
+
+lst = list(range(11)) 
+print(lst) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+st = set(range(1, 11))    # 2 arguments indicate start and end of the sequence, step set to default 1
+print(st) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+lst = list(range(0,11,2))
+print(lst) # [0, 2, 4, 6, 8, 10]
+st = set(range(0,11,2))
+print(st) #  {0, 2, 4, 6, 8, 10}
+# syntax
+for iterator in range(start, end, step):
+Example:
+
+for number in range(11):
+    print(number)   # prints 0 to 10, not including 11
+Nested For Loop
+We can write loops inside a loop.
+
+# syntax
+for x in y:
+    for t in x:
+        print(t)
+Example:
+
+person = {
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+for key in person:
+    if key == 'skills':
+        for skill in person['skills']:
+            print(skill)
+For Else
+If we want to execute some message when the loop ends, we use else.
+
+# syntax
+for iterator in range(start, end, step):
+    do something
+else:
+    print('The loop ended')
+Example:
+
+for number in range(11):
+    print(number)   # prints 0 to 10, not including 11
+else:
+    print('The loop stops at', number)
+Pass
+In python when statement is required (after semicolon), but we don't like to execute any code there, we can write the word pass to avoid errors. Also we can use it as a placeholder, for future statements.
+
+Example:
+
+for number in range(6):
+    pass
+🌕 You established a big milestone, you are unstoppable. Keep going! You have just completed day 10 challenges and you are 10 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+
+💻 Exercises: Day 10
+Exercises: Level 1
+Iterate 0 to 10 using for loop, do the same using while loop.
+
+Iterate 10 to 0 using for loop, do the same using while loop.
+
+Write a loop that makes seven calls to print(), so we get on the output the following triangle:
+
+  #
+  ##
+  ###
+  ####
+  #####
+  ######
+  #######
+Use nested loops to create the following:
+
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+Print the following pattern:
+
+0 x 0 = 0
+1 x 1 = 1
+2 x 2 = 4
+3 x 3 = 9
+4 x 4 = 16
+5 x 5 = 25
+6 x 6 = 36
+7 x 7 = 49
+8 x 8 = 64
+9 x 9 = 81
+10 x 10 = 100
+Iterate through the list, ['Python', 'Numpy','Pandas','Django', 'Flask'] using a for loop and print out the items.
+
+Use for loop to iterate from 0 to 100 and print only even numbers
+
+Use for loop to iterate from 0 to 100 and print only odd numbers
+
+Exercises: Level 2
+Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+The sum of all numbers is 5050.
+Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+
+The sum of all evens is 2550. And the sum of all odds is 2500.
+Exercises: Level 3
+Go to the data folder and use the countries.py file. Loop through the countries and extract all the countries containing the word land.
+This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+Go to the data folder and use the countries_data.py file.
+What are the total number of languages in the data
+Find the ten most spoken languages from the data
+Find the 10 most populated countries in the world
+
+
+Functions
+So far we have seen many built-in Python functions. In this section, we will focus on custom functions. What is a function? Before we start making functions, let us learn what a function is and why we need them?
+
+Defining a Function
+A function is a reusable block of code or programming statements designed to perform a certain task. To define or declare a function, Python provides the def keyword. The following is the syntax for defining a function. The function block of code is executed only if the function is called or invoked.
+
+Declaring and Calling a Function
+When we make a function, we call it declaring a function. When we start using the it, we call it calling or invoking a function. Function can be declared with or without parameters.
+
+# syntax
+# Declaring a function
+def function_name():
+    codes
+    codes
+# Calling a function
+function_name()
+Function without Parameters
+Function can be declared without parameters.
+
+Example:
+
+def generate_full_name ():
+    first_name = 'Asabeneh'
+    last_name = 'Yetayeh'
+    space = ' '
+    full_name = first_name + space + last_name
+    print(full_name)
+generate_full_name () # calling a function
+
+def add_two_numbers ():
+    num_one = 2
+    num_two = 3
+    total = num_one + num_two
+    print(total)
+add_two_numbers()
+Function Returning a Value - Part 1
+Function can also return values, if a function does not have a return statement, the value of the function is None. Let us rewrite the above functions using return. From now on, we get a value from a function when we call the function and print it.
+
+def generate_full_name ():
+    first_name = 'Asabeneh'
+    last_name = 'Yetayeh'
+    space = ' '
+    full_name = first_name + space + last_name
+    return full_name
+print(generate_full_name())
+
+def add_two_numbers ():
+    num_one = 2
+    num_two = 3
+    total = num_one + num_two
+    return total
+print(add_two_numbers())
+Function with Parameters
+In a function we can pass different data types(number, string, boolean, list, tuple, dictionary or set) as a parameter
+
+Single Parameter: If our function takes a parameter we should call our function with an argument
+  # syntax
+  # Declaring a function
+  def function_name(parameter):
+    codes
+    codes
+  # Calling function
+  print(function_name(argument))
+Example:
+
+def greetings (name):
+    message = name + ', welcome to Python for Everyone!'
+    return message
+
+print(greetings('Asabeneh'))
+
+def add_ten(num):
+    ten = 10
+    return num + ten
+print(add_ten(90))
+
+def square_number(x):
+    return x * x
+print(square_number(2))
+
+def area_of_circle (r):
+    PI = 3.14
+    area = PI * r ** 2
+    return area
+print(area_of_circle(10))
+
+def sum_of_numbers(n):
+    total = 0
+    for i in range(n+1):
+        total+=i
+    print(total)
+print(sum_of_numbers(10)) # 55
+print(sum_of_numbers(100)) # 5050
+Two Parameter: A function may or may not have a parameter or parameters. A function may also have two or more parameters. If our function takes parameters we should call it with arguments. Let us check a function with two parameters:
+  # syntax
+  # Declaring a function
+  def function_name(para1, para2):
+    codes
+    codes
+  # Calling function
+  print(function_name(arg1, arg2))
+Example:
+
+def generate_full_name (first_name, last_name):
+    space = ' '
+      full_name = first_name + space + last_name
+      return full_name
+print('Full Name: ', generate_full_name('Asabeneh','Yetayeh'))
+
+def sum_two_numbers (num_one, num_two):
+    sum = num_one + num_two
+    return sum
+print('Sum of two numbers: ', sum_two_numbers(1, 9))
+
+def calculate_age (current_year, birth_year):
+    age = current_year - birth_year
+    return age;
+
+print('Age: ', calculate_age(2021, 1819))
+
+def weight_of_object (mass, gravity):
+    weight = str(mass * gravity)+ ' N' # the value has to be changed to a string first
+    return weight
+print('Weight of an object in Newtons: ', weight_of_object(100, 9.81))
+Passing Arguments with Key and Value
+If we pass the arguments with key and value, the order of the arguments does not matter.
+
+# syntax
+# Declaring a function
+def function_name(para1, para2):
+    codes
+    codes
+# Calling function
+print(function_name(para1 = 'John', para2 = 'Doe')) # the order of arguments does not matter here
+Example:
+
+def print_fullname(firstname, lastname):
+    space = ' '
+    full_name = firstname  + space + lastname
+    print(full_name)
+print(print_fullname(firstname = 'Asabeneh', lastname = 'Yetayeh'))
+
+def add_two_numbers (num1, num2):
+    total = num1 + num2
+    print(total)
+print(add_two_numbers(num2 = 3, num1 = 2)) # Order does not matter
+Function Returning a Value - Part 2
+If we do not return a value with a function, then our function is returning None by default. To return a value with a function we use the keyword return followed by the variable we are returning. We can return any kind of data types from a function.
+
+Returning a string: Example:
+def print_name(firstname):
+    return firstname
+print_name('Asabeneh') # Asabeneh
+
+def print_full_name(firstname, lastname):
+    space = ' '
+    full_name = firstname  + space + lastname
+    return full_name
+print_full_name(firstname='Asabeneh', lastname='Yetayeh')
+Returning a number:
+Example:
+
+def add_two_numbers (num1, num2):
+    total = num1 + num2
+    return total
+print(add_two_numbers(2, 3))
+
+def calculate_age (current_year, birth_year):
+    age = current_year - birth_year
+    return age;
+print('Age: ', calculate_age(2019, 1819))
+Returning a boolean: Example:
+def is_even (n):
+    if n % 2 == 0:
+        print('even')
+        return True    # return stops further execution of the function, similar to break 
+    return False
+print(is_even(10)) # True
+print(is_even(7)) # False
+Returning a list: Example:
+def find_even_numbers(n):
+    evens = []
+    for i in range(n + 1):
+        if i % 2 == 0:
+            evens.append(i)
+    return evens
+print(find_even_numbers(10))
+Function with Default Parameters
+Sometimes we pass default values to parameters, when we invoke the function. If we do not pass arguments when calling the function, their default values will be used.
+
+# syntax
+# Declaring a function
+def function_name(param = value):
+    codes
+    codes
+# Calling function
+function_name()
+function_name(arg)
+Example:
+
+def greetings (name = 'Peter'):
+    message = name + ', welcome to Python for Everyone!'
+    return message
+print(greetings())
+print(greetings('Asabeneh'))
+
+def generate_full_name (first_name = 'Asabeneh', last_name = 'Yetayeh'):
+    space = ' '
+    full_name = first_name + space + last_name
+    return full_name
+
+print(generate_full_name())
+print(generate_full_name('David','Smith'))
+
+def calculate_age (birth_year,current_year = 2021):
+    age = current_year - birth_year
+    return age;
+print('Age: ', calculate_age(1821))
+
+def weight_of_object (mass, gravity = 9.81):
+    weight = str(mass * gravity)+ ' N' # the value has to be changed to string first
+    return weight
+print('Weight of an object in Newtons: ', weight_of_object(100)) # 9.81 - average gravity on Earth's surface
+print('Weight of an object in Newtons: ', weight_of_object(100, 1.62)) # gravity on the surface of the Moon
+Arbitrary Number of Arguments
+If we do not know the number of arguments we pass to our function, we can create a function which can take arbitrary number of arguments by adding * before the parameter name.
+
+# syntax
+# Declaring a function
+def function_name(*args):
+    codes
+    codes
+# Calling function
+function_name(param1, param2, param3,..)
+Example:
+
+def sum_all_nums(*nums):
+    total = 0
+    for num in nums:
+        total += num     # same as total = total + num 
+    return total
+print(sum_all_nums(2, 3, 5)) # 10
+Default and Arbitrary Number of Parameters in Functions
+def generate_groups (team,*args):
+    print(team)
+    for i in args:
+        print(i)
+print(generate_groups('Team-1','Asabeneh','Brook','David','Eyob'))
+Function as a Parameter of Another Function
+#You can pass functions around as parameters
+def square_number (n):
+    return n * n
+def do_something(f, x):
+    return f(x)
+print(do_something(square_number, 3)) # 27
+🌕 You achieved quite a lot so far. Keep going! You have just completed day 11 challenges and you are 11 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+
+Testimony
+Now it is time to express your thoughts about the Author and 30DaysOfPython. You can leave your testimonial on this link
+
+💻 Exercises: Day 11
+Exercises: Level 1
+Declare a function add_two_numbers. It takes two parameters and it returns a sum.
+Area of a circle is calculated as follows: area = π x r x r. Write a function that calculates area_of_circle.
+Write a function called add_all_nums which takes arbitrary number of arguments and sums all the arguments. Check if all the list items are number types. If not do give a reasonable feedback.
+Temperature in °C can be converted to °F using this formula: °F = (°C x 9/5) + 32. Write a function which converts °C to °F, convert_celsius_to-fahrenheit.
+Write a function called check-season, it takes a month parameter and returns the season: Autumn, Winter, Spring or Summer.
+Write a function called calculate_slope which return the slope of a linear equation
+Quadratic equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
+Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
+Declare a function named reverse_list. It takes an array as a parameter and it returns the reverse of the array (use loops).
+print(reverse_list([1, 2, 3, 4, 5]))
+# [5, 4, 3, 2, 1]
+print(reverse_list1(["A", "B", "C"]))
+# ["C", "B", "A"]
+Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
+Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(food_staff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat']
+numbers = [2, 3, 7, 9]
+print(add_item(numbers, 5))      [2, 3, 7, 9, 5]
+Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(food_staff, 'Mango'))  # ['Potato', 'Tomato', 'Milk'];
+numbers = [2, 3, 7, 9]
+print(remove_item(numbers, 3))  # [2, 7, 9]
+Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
+print(sum_of_numbers(5))  # 15
+print(sum_of_numbers(10)) # 55
+print(sum_of_numbers(100)) # 5050
+Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
+Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that - range.
+Exercises: Level 2
+Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+    print(evens_and_odds(100))
+    # The number of odds are 50.
+    # The number of evens are 51.
+Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+Call your function is_empty, it takes a parameter and it checks if it is empty or not
+Write different functions which take lists. They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation).
+Exercises: Level 3
+Write a function called is_prime, which checks if a number is prime.
+Write a functions which checks if all items are unique in the list.
+Write a function which checks if all the items of the list are of the same data type.
+Write a function which check if provided variable is a valid python variable
+Go to the data folder and access the countries-data.py file.
+Create a function called the most_spoken_languages in the world. It should return 10 or 20 most spoken languages in the world in descending order
+Create a function called the most_populated_countries. It should return 10 or 20 most populated countries in descending order.
+
+Modules
+What is a Module
+A module is a file containing a set of codes or a set of functions which can be included to an application. A module could be a file containing a single variable, a function or a big code base.
+
+Creating a Module
+To create a module we write our codes in a python script and we save it as a .py file. Create a file named mymodule.py inside your project folder. Let us write some code in this file.
+
+# mymodule.py file
+def generate_full_name(firstname, lastname):
+    return firstname + ' ' + lastname
+Create main.py file in your project directory and import the mymodule.py file.
+
+Importing a Module
+To import the file we use the import keyword and the name of the file only.
+
+# main.py file
+import mymodule
+print(mymodule.generate_full_name('Asabeneh', 'Yetayeh')) # Asabeneh Yetayeh
+Import Functions from a Module
+We can have many functions in a file and we can import all the functions differently.
+
+# main.py file
+from mymodule import generate_full_name, sum_two_nums, person, gravity
+print(generate_full_name('Asabneh','Yetayeh'))
+print(sum_two_nums(1,9))
+mass = 100;
+weight = mass * gravity
+print(weight)
+print(person['firstname'])
+Import Functions from a Module and Renaming
+During importing we can rename the name of the module.
+
+# main.py file
+from mymodule import generate_full_name as fullname, sum_two_nums as total, person as p, gravity as g
+print(fullname('Asabneh','Yetayeh'))
+print(total(1, 9))
+mass = 100;
+weight = mass * g
+print(weight)
+print(p)
+print(p['firstname'])
+Import Built-in Modules
+Like other programming languages we can also import modules by importing the file/function using the key word import. Let's import the common module we will use most of the time. Some of the common built-in modules: math, datetime, os,sys, random, statistics, collections, json,re
+
+OS Module
+Using python os module it is possible to automatically perform many operating system tasks. The OS module in Python provides functions for creating, changing current working directory, and removing a directory (folder), fetching its contents, changing and identifying the current directory.
+
+# import the module
+import os
+# Creating a directory
+os.mkdir('directory_name')
+# Changing the current directory
+os.chdir('path')
+# Getting current working directory
+os.getcwd()
+# Removing directory
+os.rmdir()
+Sys Module
+The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. Function sys.argv returns a list of command line arguments passed to a Python script. The item at index 0 in this list is always the name of the script, at index 1 is the argument passed from the command line.
+
+Example of a script.py file:
+
+import sys
+#print(sys.argv[0], argv[1],sys.argv[2])  # this line would print out: filename argument1 argument2
+print('Welcome {}. Enjoy  {} challenge!'.format(sys.argv[1], sys.argv[2]))
+Now to check how this script works I wrote in command line:
+
+python script.py Asabeneh 30DaysOfPython
+The result:
+
+Welcome Asabeneh. Enjoy  30DayOfPython challenge! 
+Some useful sys commands:
+
+# to exit sys
+sys.exit()
+# To know the largest integer variable it takes
+sys.maxsize
+# To know environment path
+sys.path
+# To know the version of python you are using
+sys.version
+Statistics Module
+The statistics module provides functions for mathematical statistics of numeric data. The popular statistical functions which are defined in this module: mean, median, mode, stdev etc.
+
+from statistics import * # importing all the statistics modules
+ages = [20, 20, 4, 24, 25, 22, 26, 20, 23, 22, 26]
+print(mean(ages))       # ~22.9
+print(median(ages))     # 23
+print(mode(ages))       # 20
+print(stdev(ages))      # ~2.3
+Math Module
+Module containing many mathematical operations and constants.
+
+import math
+print(math.pi)           # 3.141592653589793, pi constant
+print(math.sqrt(2))      # 1.4142135623730951, square root
+print(math.pow(2, 3))    # 8.0, exponential function
+print(math.floor(9.81))  # 9, rounding to the lowest
+print(math.ceil(9.81))   # 10, rounding to the highest
+print(math.log10(100))   # 2, logarithm with 10 as base
+Now, we have imported the math module which contains lots of function which can help us to perform mathematical calculations. To check what functions the module has got, we can use help(math), or dir(math). This will display the available functions in the module. If we want to import only a specific function from the module we import it as follows:
+
+from math import pi
+print(pi)
+It is also possible to import multiple functions at once
+
+from math import pi, sqrt, pow, floor, ceil, log10
+print(pi)                 # 3.141592653589793
+print(sqrt(2))            # 1.4142135623730951
+print(pow(2, 3))          # 8.0
+print(floor(9.81))        # 9
+print(ceil(9.81))         # 10
+print(math.log10(100))    # 2
+But if we want to import all the function in math module we can use * .
+
+from math import *
+print(pi)                  # 3.141592653589793, pi constant
+print(sqrt(2))             # 1.4142135623730951, square root
+print(pow(2, 3))           # 8.0, exponential
+print(floor(9.81))         # 9, rounding to the lowest
+print(ceil(9.81))          # 10, rounding to the highest
+print(math.log10(100))     # 2
+When we import we can also rename the name of the function.
+
+from math import pi as  PI
+print(PI) # 3.141592653589793
+String Module
+A string module is a useful module for many purposes. The example below shows some use of the string module.
+
+import string
+print(string.ascii_letters) # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+print(string.digits)        # 0123456789
+print(string.punctuation)   # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Random Module
+By now you are familiar with importing modules. Let us do one more import to get very familiar with it. Let us import random module which gives us a random number between 0 and 0.9999.... The random module has lots of functions but in this section we will only use random and randint.
+
+from random import random, randint
+print(random())   # it doesn't take any arguments; it returns a value between 0 and 0.9999
+print(randint(5, 20)) # it returns a random integer number between [5, 20] inclusive
+🌕 You are going far. Keep going! You have just completed day 12 challenges and you are 12 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+
+💻 Exercises: Day 12
+Exercises: Level 1
+Writ a function which generates a six digit/character random_user_id.
+  print(random_user_id());
+  '1ee33d'
+Modify the previous task. Declare a function named user_id_gen_by_user. It doesn’t take any parameters but it takes two inputs using input(). One of the inputs is the number of characters and the second input is the number of IDs which are supposed to be generated.
+print(user_id_gen_by_user()) # user input: 5 5
+#output:
+#kcsy2
+#SMFYb
+#bWmeq
+#ZXOYh
+#2Rgxf
+   
+print(user_id_gen_by_user()) # 16 5
+#1GCSgPLMaBAVQZ26
+#YD7eFwNQKNs7qXaT
+#ycArC5yrRupyG00S
+#UbGxOFI7UXSWAyKN
+#dIV0SSUTgAdKwStr
+Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).
+print(rgb_color_gen())
+# rgb(125,244,255) - the output should be in this form
+Exercises: Level 2
+Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f. Check the task 6 for output examples).
+Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
+Write a function generate_colors which can generate any number of hexa or rgb colors.
+   generate_colors('hexa', 3) # ['#a3e12f','#03ed55','#eb3d2b'] 
+   generate_colors('hexa', 1) # ['#b334ef']
+   generate_colors('rgb', 3)  # ['rgb(5, 55, 175','rgb(50, 105, 100','rgb(15, 26, 80'] 
+   generate_colors('rgb', 1)  # ['rgb(33,79, 176)']
+Exercises: Level 3
+Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled list
+Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
+
+List Comprehension
+List comprehension in Python is a compact way of creating a list from a sequence. It is a short way to create a new list. List comprehension is considerably faster than processing a list using the for loop.
+
+# syntax
+[i for i in iterable if expression]
+Example:1
+
+For instance if you want to change a string to a list of characters. You can use a couple of methods. Let's see some of them:
+
+# One way
+language = 'Python'
+lst = list(language) # changing the string to list
+print(type(lst))     # list
+print(lst)           # ['P', 'y', 't', 'h', 'o', 'n']
+
+# Second way: list comprehension
+lst = [i for i in language]
+print(type(lst)) # list
+print(lst)       # ['P', 'y', 't', 'h', 'o', 'n']
+Example:2
+
+For instance if you want to generate a list of numbers
+
+# Generating numbers
+numbers = [i for i in range(11)]  # to generate numbers from 0 to 10
+print(numbers)                    # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# It is possible to do mathematical operations during iteration
+squares = [i * i for i in range(11)]
+print(squares)                    # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# It is also possible to make a list of tuples
+numbers = [(i, i * i) for i in range(11)]
+print(numbers)                             # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+Example:2
+
+List comprehension can be combined with if expression
+
+# Generating even numbers
+even_numbers = [i for i in range(21) if i % 2 == 0]  # to generate even numbers list in range 0 to 21
+print(even_numbers)                    # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+# Generating odd numbers
+odd_numbers = [i for i in range(21) if i % 2 != 0]  # to generate odd numbers in range 0 to 21
+print(odd_numbers)                      # [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+# Filter numbers: let's filter out positive even numbers from the list below
+numbers = [-8, -7, -3, -1, 0, 1, 3, 4, 5, 7, 6, 8, 10]
+positive_even_numbers = [i for i in numbers if i % 2 == 0 and i > 0]
+print(positive_even_numbers)                    # [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+# Flattening a three dimensional array
+list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flattened_list = [ number for row in list_of_lists for number in row]
+print(flattened_list)    # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Lambda Function
+Lambda function is a small anonymous function without a name. It can take any number of arguments, but can only have one expression. Lambda function is similar to anonymous functions in JavaScript. We need it when we want to write an anonymous function inside another function.
+
+Creating a Lambda Function
+To create a lambda function we use lambda keyword followed by a parameter(s), followed by an expression. See the syntax and the example below. Lambda function does not use return but it explicitly returns the expression.
+
+# syntax
+x = lambda param1, param2, param3: param1 + param2 + param2
+print(x(arg1, arg2, arg3))
+Example:
+
+# Named function
+def add_two_nums(a, b):
+    return a + b
+
+print(add_two_nums(2, 3))     # 5
+# Lets change the above function to a lambda function
+add_two_nums = lambda a, b: a + b
+print(add_two_nums(2,3))    # 5
+
+# Self invoking lambda function
+(lambda a, b: a + b)(2,3) # 5 - need to encapsulate it in print() to see the result in the console
+
+square = lambda x : x ** 2
+print(square(3))    # 9
+cube = lambda x : x ** 3
+print(cube(3))    # 27
+
+# Multiple variables
+multiple_variable = lambda a, b, c: a ** 2 - 3 * b + 4 * c
+print(multiple_variable(5, 5, 3)) # 22
+Lambda Function Inside Another Function
+Using a lambda function inside another function.
+
+def power(x):
+    return lambda n : x ** n
+
+cube = power(2)(3)   # function power now need 2 arguments to run, in separate rounded brackets
+print(cube)          # 8
+two_power_of_five = power(2)(5) 
+print(two_power_of_five)  # 32
+🌕 Keep up the good work. Keep the momentum going, the sky is the limit! You have just completed day 13 challenges and you are 13 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
+
+💻 Exercises: Day 13
+Filter only negative and zero in the list using list comprehension
+
+numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
+Flatten the following list of lists of lists to a one dimensional list :
+
+list_of_lists =[[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
+
+output
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+Using list comprehension create the following list of tuples:
+
+[(0, 1, 0, 0, 0, 0, 0),
+(1, 1, 1, 1, 1, 1, 1),
+(2, 1, 2, 4, 8, 16, 32),
+(3, 1, 3, 9, 27, 81, 243),
+(4, 1, 4, 16, 64, 256, 1024),
+(5, 1, 5, 25, 125, 625, 3125),
+(6, 1, 6, 36, 216, 1296, 7776),
+(7, 1, 7, 49, 343, 2401, 16807),
+(8, 1, 8, 64, 512, 4096, 32768),
+(9, 1, 9, 81, 729, 6561, 59049),
+(10, 1, 10, 100, 1000, 10000, 100000)]
+Flatten the following list to a new list:
+
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+output:
+[['FINLAND','FIN', 'HELSINKI'], ['SWEDEN', 'SWE', 'STOCKHOLM'], ['NORWAY', 'NOR', 'OSLO']]
+Change the following list to a list of dictionaries:
+
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+output:
+[{'country': 'FINLAND', 'city': 'HELSINKI'},
+{'country': 'SWEDEN', 'city': 'STOCKHOLM'},
+{'country': 'NORWAY', 'city': 'OSLO'}]
+Change the following list of lists to a list of concatenated strings:
+
+names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
+output
+['Asabeneh Yetaeyeh', 'David Smith', 'Donald Trump', 'Bill Gates']
+Write a lambda function which can solve a slope or y-intercept of linear functions.
+
+
+Higher Order Functions
+In Python functions are treated as first class citizens, allowing you to perform the following operations on functions:
+
+A function can take one or more functions as parameters
+A function can be returned as a result of another function
+A function can be modified
+A function can be assigned to a variable
+In this section, we will cover:
+
+Handling functions as parameters
+Returning functions as return value from another functions
+Using Python closures and decorators
+Function as a Parameter
+def sum_numbers(nums):  # normal function
+    return sum(nums)    # a sad function abusing the built-in sum function :<
+
+def higher_order_function(f, lst):  # function as a parameter
+    summation = f(lst)
+    return summation
+result = higher_order_function(sum_numbers, [1, 2, 3, 4, 5])
+print(result)       # 15
+Function as a Return Value
+def square(x):          # a square function
+    return x ** 2
+
+def cube(x):            # a cube function
+    return x ** 3
+
+def absolute(x):        # an absolute value function
+    if x >= 0:
+        return x
+    else:
+        return -(x)
+
+def higher_order_function(type): # a higher order function returning a function
+    if type == 'square':
+        return square
+    elif type == 'cube':
+        return cube
+    elif type == 'absolute':
+        return absolute
+
+result = higher_order_function('square')
+print(result(3))       # 9
+result = higher_order_function('cube')
+print(result(3))       # 27
+result = higher_order_function('absolute')
+print(result(-3))      # 3
+You can see from the above example that the higher order function is returning different functions depending on the passed parameter
+
+Python Closures
+Python allows a nested function to access the outer scope of the enclosing function. This is is known as a Closure. Let us have a look at how closures work in Python. In Python, closure is created by nesting a function inside another encapsulating function and then returning the inner function. See the example below.
+
+Example:
+
+def add_ten():
+    ten = 10
+    def add(num):
+        return num + ten
+    return add
+
+closure_result = add_ten()
+print(closure_result(5))  # 15
+print(closure_result(10))  # 20
+Python Decorators
+A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. Decorators are usually called before the definition of a function you want to decorate.
+
+Creating Decorators
+To create a decorator function, we need an outer function with an inner wrapper function.
+
+Example:
+
+# Normal function
+def greeting():
+    return 'Welcome to Python'
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+g = uppercase_decorator(greeting)
+print(g())          # WELCOME TO PYTHON
+
+## Let us implement the example above with a decorator
+
+'''This decorator function is a higher order function
+that takes a function as a parameter'''
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+@uppercase_decorator
+def greeting():
+    return 'Welcome to Python'
+print(greeting())   # WELCOME TO PYTHON
+Applying Multiple Decorators to a Single Function
+'''These decorator functions are higher order functions
+that take functions as parameters'''
+
+# First Decorator
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+
+# Second decorator
+def split_string_decorator(function):
+    def wrapper():
+        func = function()
+        splitted_string = func.split()
+        return splitted_string
+
+    return wrapper
+
+@split_string_decorator
+@uppercase_decorator     # order with decorators is important in this case - .upper() function does not work with lists
+def greeting():
+    return 'Welcome to Python'
+print(greeting())   # WELCOME TO PYTHON
+Accepting Parameters in Decorator Functions
+Most of the time we need our functions to take parameters, so we might need to define a decorator that accepts parameters.
+
+def decorator_with_parameters(function):
+    def wrapper_accepting_parameters(para1, para2, para3):
+        function(para1, para2, para3)
+        print("I live in {}".format(para3))
+    return wrapper_accepting_parameters
+
+@decorator_with_parameters
+def print_full_name(first_name, last_name, country):
+    print("I am {} {}. I love to teach.".format(
+        first_name, last_name, country))
+
+print_full_name("Asabeneh", "Yetayeh",'Finland')
+Built-in Higher Order Functions
+Some of the built-in higher order functions that we cover in this part are map(), filter, and reduce. Lambda function can be passed as a parameter and the best use case of lambda functions is in functions like map, filter and reduce.
+
+Python - Map Function
+The map() function is a built-in function that takes a function and iterable as parameters.
+
+    # syntax
+    map(function, iterable)
+Example:1
+
+numbers = [1, 2, 3, 4, 5] # iterable
+def square(x):
+    return x ** 2
+numbers_squared = map(square, numbers)
+print(list(numbers_squared))    # [1, 4, 9, 16, 25]
+# Lets apply it with a lambda function
+numbers_squared = map(lambda x : x ** 2, numbers)
+print(list(numbers_squared))    # [1, 4, 9, 16, 25]
+Example:2
+
+numbers_str = ['1', '2', '3', '4', '5']  # iterable
+numbers_int = map(int, numbers_str)
+print(list(numbers_int))    # [1, 2, 3, 4, 5]
+Example:3
+
+names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
+
+def change_to_upper(name):
+    return name.upper()
+
+names_upper_cased = map(change_to_upper, names)
+print(list(names_upper_cased))    # ['ASABENEH', 'LIDIYA', 'ERMIAS', 'ABRAHAM']
+
+# Let us apply it with a lambda function
+names_upper_cased = map(lambda name: name.upper(), names)
+print(list(names_upper_cased))    # ['ASABENEH', 'LIDIYA', 'ERMIAS', 'ABRAHAM']
+What actually map does is iterating over a list. For instance, it changes the names to upper case and returns a new list.
+
+Python - Filter Function
+The filter() function calls the specified function which returns boolean for each item of the specified iterable (list). It filters the items that satisfy the filtering criteria.
+
+    # syntax
+    filter(function, iterable)
+Example:1
+
+# Lets filter only even nubers
+numbers = [1, 2, 3, 4, 5]  # iterable
+
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    return False
+
+even_numbers = filter(is_even, numbers)
+print(list(even_numbers))       # [2, 4]
+Example:2
+
+numbers = [1, 2, 3, 4, 5]  # iterable
+
+def is_odd(num):
+    if num % 2 != 0:
+        return True
+    return False
+
+odd_numbers = filter(is_odd, numbers)
+print(list(odd_numbers))       # [1, 3, 5]
+# Filter long name
+names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
+def is_name_long(name):
+    if len(name) > 7:
+        return True
+    return False
+
+long_names = filter(is_name_long, names)
+print(list(long_names))         # ['Asabeneh']
+Python - Reduce Function
+The reduce() function is defined in the functools module and we should import it from this module. Like map and filter it takes two parameters, a function and an iterable. However, it does not return another iterable, instead it returns a single value. Example:1
+
+numbers_str = ['1', '2', '3', '4', '5']  # iterable
+def add_two_nums(x, y):
+    return int(x) + int(y)
+
+total = reduce(add_two_nums, numbers_str)
+print(total)    # 15
+💻 Exercises: Day 14
+countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Exercises: Level 1
+Explain the difference between map, filter, and reduce.
+Explain the difference between higher order function, closure and decorator
+Define a call function before map, filter or reduce, see examples.
+Use for loop to print each country in the countries list.
+Use for to print each name in the names list.
+Use for to print each number in the numbers list.
+Exercises: Level 2
+Use map to create a new list by changing each country to uppercase in the countries list
+Use map to create a new list by changing each number to its square in the numbers list
+Use map to change each name to uppercase in the names list
+Use filter to filter out countries containing 'land'.
+Use filter to filter out countries having exactly six characters.
+Use filter to filter out countries containing six letters and more in the country list.
+Use filter to filter out countries starting with an 'E'
+Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
+Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
+Use reduce to sum all the numbers in the numbers list.
+Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the countries list in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
+Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
+Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
+Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
+Exercises: Level 3
+Use the countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) file and follow the tasks below:
+Sort countries by name, by capital, by population
+Sort out the ten most spoken languages by location.
+Sort out the ten most populated countries.
+
+
+Python Error Types
+When we write code it is common that we make a typo or some other common error. If our code fails to run, the Python interpreter will display a message, containing feedback with information on where the problem occurs and the type of an error. It will also sometimes gives us suggestions on a possible fix. Understanding different types of errors in programming languages will help us to debug our code quickly and also it makes us better at what we do.
+
+Let us see the most common error types one by one. First let us open our Python interactive shell. Go to your you computer terminal and write 'python'. The python interactive shell will be opened.
+
+SyntaxError
+Example 1: SyntaxError
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print 'hello world'
+  File "<stdin>", line 1
+    print 'hello world'
+                      ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello world')?
+>>>
+As you can see we made a syntax error because we forgot to enclose the string with parenthesis and Python already suggests the solution. Let us fix it.
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print 'hello world'
+  File "<stdin>", line 1
+    print 'hello world'
+                      ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello world')?
+>>> print('hello world')
+hello world
+>>>
+The error was a SyntaxError. After the fix our code was executed without a hitch. Let see more error types.
+
+NameError
+Example 1: NameError
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(age)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'age' is not defined
+>>>
+As you can see from the message above, name age is not defined. Yes, it is true that we did not define an age variable but we were trying to print it out as if we had had declared it. Now, lets fix this by declaring it and assigning with a value.
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(age)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'age' is not defined
+>>> age = 25
+>>> print(age)
+25
+>>>
+The type of error was a NameError. We debugged the error by defining the variable name.
+
+IndexError
+Example 1: IndexError
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> numbers = [1, 2, 3, 4, 5]
+>>> numbers[5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>>
+In the example above, Python raised an IndexError, because the list has only indexes from 0 to 4 , so it was out of range.
+
+ModuleNotFoundError
+Example 1: ModuleNotFoundError
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import maths
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'maths'
+>>>
+In the example above, I added an extra s to math deliberately and ModuleNotFoundError was raised. Lets fix it by removing the extra s from math.
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import maths
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'maths'
+>>> import math
+>>>
+We fixed it, so let's use some of the functions from the math module.
+
+AttributeError
+Example 1: AttributeError
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import maths
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'maths'
+>>> import math
+>>> math.PI
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'math' has no attribute 'PI'
+>>>
+As you can see, I made a mistake again! Instead of pi, I tried to call a PI function from maths module. It raised an attribute error, it means, that the function does not exist in the module. Lets fix it by changing from PI to pi.
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import maths
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'maths'
+>>> import math
+>>> math.PI
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'math' has no attribute 'PI'
+>>> math.pi
+3.141592653589793
+>>>
+Now, when we call pi from the math module we got the result.
+
+KeyError
+Example 1: KeyError
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> users = {'name':'Asab', 'age':250, 'country':'Finland'}
+>>> users['name']
+'Asab'
+>>> users['county']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'county'
+>>>
+As you can see, there was a typo in the key used to get the dictionary value. so, this is a key error and the fix is quite straight forward. Let's do this!
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> user = {'name':'Asab', 'age':250, 'country':'Finland'}
+>>> user['name']
+'Asab'
+>>> user['county']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'county'
+>>> user['country']
+'Finland'
+>>>
+We debugged the error, our code ran and we got the value.
+
+TypeError
+Example 1: TypeError
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 4 + '3'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>>
+In the example above, a TypeError is raised because we cannot add a number to a string. First solution would be to convert the string to int or float. Another solution would be converting the number to a string (the result then would be '43'). Let us follow the first fix.
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 4 + '3'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> 4 + int('3')
+7
+>>> 4 + float('3')
+7.0
+>>>
+Error removed and we got the result we expected.
+
+ImportError
+Example 1: TypeError
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from math import power
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name 'power' from 'math'
+>>>
+There is no function called power in the math module, it goes with a different name: pow. Let's correct it:
+
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from math import power
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name 'power' from 'math'
+>>> from math import pow
+>>> pow(2,3)
+8.0
+>>>
+ValueError
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> int('12a')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '12a'
+>>>
+In this case we cannot change the given string to a number, because of the 'a' letter in it.
+
+ZeroDivisionError
+asabeneh@Asabeneh:~$ python
+Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>>
+We cannot divide a number by zero.
+
+We have covered some of the python error types, if you want to check more about it check the python documentation about python error types. If you are good at reading the error types then you will be able to fix your bugs fast and you will also become a better programmer.
+
+Python datetime
+Python has got datetime module to handle date and time.
+
+import datetime
+print(dir(datetime))
+['MAXYEAR', 'MINYEAR', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'date', 'datetime', 'datetime_CAPI', 'sys', 'time', 'timedelta', 'timezone', 'tzinfo']
+With dir or help built-in commands it is possible to know the available functions in a certain module. As you can see, in the datetime module there are many functions, but we will focus on date, datetime, time and timedelta. Let se see them one by one.
+
+Getting datetime Information
+from datetime import datetime
+now = datetime.now()
+print(now)                      # 2021-07-08 07:34:46.549883
+day = now.day                   # 8
+month = now.month               # 7
+year = now.year                 # 2021
+hour = now.hour                 # 7
+minute = now.minute             # 38
+second = now.second
+timestamp = now.timestamp()
+print(day, month, year, hour, minute)
+print('timestamp', timestamp)
+print(f'{day}/{month}/{year}, {hour}:{minute}')  # 8/7/2021, 7:38
+Timestamp or Unix timestamp is the number of seconds elapsed from 1st of January 1970 UTC.
+
+Formatting Date Output Using strftime
+from datetime import datetime
+new_year = datetime(2020, 1, 1)
+print(new_year)      # 2020-01-01 00:00:00
+day = new_year.day
+month = new_year.month
+year = new_year.year
+hour = new_year.hour
+minute = new_year.minute
+second = new_year.second
+print(day, month, year, hour, minute) #1 1 2020 0 0
+print(f'{day}/{month}/{year}, {hour}:{minute}')  # 1/1/2020, 0:0
+Formatting date time using strftime method and the documentation can be found here.
+
+from datetime import datetime
+# current date and time
+now = datetime.now()
+t = now.strftime("%H:%M:%S")
+print("time:", t)
+time_one = now.strftime("%m/%d/%Y, %H:%M:%S")
+# mm/dd/YY H:M:S format
+print("time one:", time_one)
+time_two = now.strftime("%d/%m/%Y, %H:%M:%S")
+# dd/mm/YY H:M:S format
+print("time two:", time_two)
+time: 01:05:01
+time one: 12/05/2019, 01:05:01
+time two: 05/12/2019, 01:05:01
+Here are all the strftime symbols we use to format time. An example of all the formats for this module.
+
+strftime
+
+String to Time Using strptime
+Here is a documentation hat helps to understand the format.
+
+from datetime import datetime
+date_string = "5 December, 2019"
+print("date_string =", date_string)
+date_object = datetime.strptime(date_string, "%d %B, %Y")
+print("date_object =", date_object)
+date_string = 5 December, 2019
+date_object = 2019-12-05 00:00:00
+Using date from datetime
+from datetime import date
+d = date(2020, 1, 1)
+print(d)
+print('Current date:', d.today())    # 2019-12-05
+# date object of today's date
+today = date.today()
+print("Current year:", today.year)   # 2019
+print("Current month:", today.month) # 12
+print("Current day:", today.day)     # 5
+Time Objects to Represent Time
+from datetime import time
+# time(hour = 0, minute = 0, second = 0)
+a = time()
+print("a =", a)
+# time(hour, minute and second)
+b = time(10, 30, 50)
+print("b =", b)
+# time(hour, minute and second)
+c = time(hour=10, minute=30, second=50)
+print("c =", c)
+# time(hour, minute, second, microsecond)
+d = time(10, 30, 50, 200555)
+print("d =", d)
+output
+a = 00:00:00
+b = 10:30:50
+c = 10:30:50
+d = 10:30:50.200555
+
+Difference Between Two Points in Time Using
+today = date(year=2019, month=12, day=5)
+new_year = date(year=2020, month=1, day=1)
+time_left_for_newyear = new_year - today
+# Time left for new year:  27 days, 0:00:00
+print('Time left for new year: ', time_left_for_newyear)
+
+t1 = datetime(year = 2019, month = 12, day = 5, hour = 0, minute = 59, second = 0)
+t2 = datetime(year = 2020, month = 1, day = 1, hour = 0, minute = 0, second = 0)
+diff = t2 - t1
+print('Time left for new year:', diff) # Time left for new year: 26 days, 23: 01: 00
+Difference Between Two Points in Time Using timedelta
+from datetime import timedelta
+t1 = timedelta(weeks=12, days=10, hours=4, seconds=20)
+t2 = timedelta(days=7, hours=5, minutes=3, seconds=30)
+t3 = t1 - t2
+print("t3 =", t3)
+    date_string = 5 December, 2019
+    date_object = 2019-12-05 00:00:00
+    t3 = 86 days, 22:56:50
+🌕 You are an extraordinary. You are 16 steps a head to your way to greatness. Now do some exercises for your brain and muscles.
+
+💻 Exercises: Day 16
+Get the current day, month, year, hour, minute and timestamp from datetime module
+Format the current date using this format: "%m/%d/%Y, %H:%M:%S")
+Today is 5 December, 2019. Change this time string to time.
+Calculate the time difference between now and new year.
+Calculate the time difference between 1 January 1970 and now.
+Think, what can you use the datetime module for? Examples:
+Time series analysis
+To get a timestamp of any activities in an application
+Adding posts on a blog
+
+
+Regular Expressions
+A regular expression or RegEx is a special text string that helps to find patterns in data. A RegEx can be used to check if some pattern exists in a different data type. To use RegEx in python first we should import the RegEx module which is called re.
+
+The re Module
+After importing the module we can use it to detect or find patterns.
+
+import re
+Methods in re Module
+To find a pattern we use different set of re character sets that allows to search for a match in a string.
+
+re.match(): searches only in the beginning of the first line of the string and returns matched objects if found, else returns None.
+re.search: Returns a match object if there is one anywhere in the string, including multiline strings.
+re.findall: Returns a list containing all matches
+re.split: Takes a string, splits it at the match points, returns a list
+re.sub: Replaces one or many matches within a string
+Match
+# syntac
+re.match(substring, string, re.I)
+# substring is a string or a pattern, string is the text we look for a pattern , re.I is case ignore
+import re
+
+txt = 'I love to teach python and javaScript'
+# It returns an object with span, and match
+match = re.match('I love to teach', txt, re.I)
+print(match)  # <re.Match object; span=(0, 15), match='I love to teach'>
+# We can get the starting and ending position of the match as tuple using span
+span = match.span()
+print(span)     # (0, 15)
+# Lets find the start and stop position from the span
+start, end = span
+print(start, end)  # 0, 15
+substring = txt[start:end]
+print(substring)       # I love to teach
+As you can see from the example above, the pattern we are looking for (or the substring we are looking for) is I love to teach. The match function returns an object only if the text starts with the pattern.
+
+import re
+
+txt = 'I love to teach python and javaScript'
+match = re.match('I like to teach', txt, re.I)
+print(match)  # None
+The string does not string with I like to teach, therefore there was no match and the match method returned None.
+
+Search
+# syntax
+re.match(substring, string, re.I)
+# substring is a pattern, string is the text we look for a pattern , re.I is case ignore flag
+import re
+
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+
+# It returns an object with span and match
+match = re.search('first', txt, re.I)
+print(match)  # <re.Match object; span=(100, 105), match='first'>
+# We can get the starting and ending position of the match as tuple using span
+span = match.span()
+print(span)     # (100, 105)
+# Lets find the start and stop position from the span
+start, end = span
+print(start, end)  # 100 105
+substring = txt[start:end]
+print(substring)       # first
+As you can see, search is much better than match because it can look for the pattern throughout the text. Search returns a match object with a first match that was found, otherwise it returns None. A much better re function is findall. This function checks for the pattern through the whole string and returns all the matches as a list.
+
+Searching for All Matches Using findall
+findall() returns all the matches as a list
+
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+
+# It return a list
+matches = re.findall('language', txt, re.I)
+print(matches)  # ['language', 'language']
+As you can see, the word language was found two times in the string. Let us practice some more. Now we will look for both Python and python words in the string:
+
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+
+# It returns list
+matches = re.findall('python', txt, re.I)
+print(matches)  # ['Python', 'python']
+Since we are using re.I both lowercase and uppercase letters are included. If we do not have the re.I flag, then we will have to write our pattern differently. Let us check it out:
+
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+
+matches = re.findall('Python|python', txt)
+print(matches)  # ['Python', 'python']
+
+#
+matches = re.findall('[Pp]ython', txt)
+print(matches)  # ['Python', 'python']
+Replacing a Substring
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+
+match_replaced = re.sub('Python|python', 'JavaScript', txt, re.I)
+print(match_replaced)  # JavaScript is the most beautiful language that a human being has ever created.
+# OR
+match_replaced = re.sub('[Pp]ython', 'JavaScript', txt, re.I)
+print(match_replaced)  # JavaScript is the most beautiful language that a human being has ever created.
+Let us add one more example. The following string is really hard to read unless we remove the % symbol. Replacing the % with an empty string will clean the text.
+
+txt = '''%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing. 
+T%he%re i%s n%o%th%ing as r%ewarding a%s e%duc%at%i%ng a%n%d e%m%p%ow%er%ing p%e%o%ple.
+I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs. 
+D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher?'''
+
+matches = re.sub('%', '', txt)
+print(matches)
+I am teacher and I love teaching.
+There is nothing as rewarding as educating and empowering people. 
+I found teaching more interesting than any other jobs. Does this motivate you to be a teacher?
+Splitting Text Using RegEx Split
+txt = '''I am teacher and  I love teaching.
+There is nothing as rewarding as educating and empowering people.
+I found teaching more interesting than any other jobs.
+Does this motivate you to be a teacher?'''
+print(re.split('\n', txt)) # splitting using \n - end of line symbol
+['I am teacher and  I love teaching.', 'There is nothing as rewarding as educating and empowering people.', 'I found teaching more interesting than any other jobs.', 'Does this motivate you to be a teacher?']
+Writing RegEx Patterns
+To declare a string variable we use a single or double quote. To declare RegEx variable r''. The following pattern only identifies apple with lowercase, to make it case insensitive either we should rewrite our pattern or we should add a flag.
+
+import re
+
+regex_pattern = r'apple'
+txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. '
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['apple']
+
+# To make case insensitive adding flag '
+matches = re.findall(regex_pattern, txt, re.I)
+print(matches)  # ['Apple', 'apple']
+# or we can use a set of characters method
+regex_pattern = r'[Aa]pple'  # this mean the first letter could be Apple or apple
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['Apple', 'apple']
+[]: A set of characters
+[a-c] means, a or b or c
+[a-z] means, any letter from a to z
+[A-Z] means, any character from A to Z
+[0-3] means, 0 or 1 or 2 or 3
+[0-9] means any number from 0 to 9
+[A-Za-z0-9] any single character, that is a to z, A to Z or 0 to 9
+\: uses to escape special characters
+\d means: match where the string contains digits (numbers from 0-9)
+\D means: match where the string does not contain digits
+. : any character except new line character(\n)
+^: starts with
+r'^substring' eg r'^love', a sentence that starts with a word love
+r'[^abc] means not a, not b, not c.
+$: ends with
+r'substring$' eg r'love$', sentence that ends with a word love
+*: zero or more times
+r'[a]*' means a optional or it can occur many times.
++: one or more times
+r'[a]+' means at least once (or more)
+?: zero or one time
+r'[a]?' means zero times or once
+{3}: Exactly 3 characters
+{3,}: At least 3 characters
+{3,8}: 3 to 8 characters
+|: Either or
+r'apple|banana' means either apple or a banana
+(): Capture and group
+Regular Expression cheat sheet
+
+Let us use examples to clarify the meta characters above
+
+Square Bracket
+Let us use square bracket to include lower and upper case
+
+regex_pattern = r'[Aa]pple' # this square bracket mean either A or a
+txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away.'
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['Apple', 'apple']
+If we want to look for the banana, we write the pattern as follows:
+
+regex_pattern = r'[Aa]pple|[Bb]anana' # this square bracket means either A or a
+txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away.'
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['Apple', 'banana', 'apple', 'banana']
+Using the square bracket and or operator , we manage to extract Apple, apple, Banana and banana.
+
+Escape character(\) in RegEx
+regex_pattern = r'\d'  # d is a special character which means digits
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['6', '2', '0', '1', '9', '8', '2', '0', '2', '1'], this is not what we want
+One or more times(+)
+regex_pattern = r'\d+'  # d is a special character which means digits, + mean one or more times
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['6', '2019', '8', '2021'] - now, this is better!
+Period(.)
+regex_pattern = r'[a].'  # this square bracket means a and . means any character except new line
+txt = '''Apple and banana are fruits'''
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['an', 'an', 'an', 'a ', 'ar']
+
+regex_pattern = r'[a].+'  # . any character, + any character one or more times 
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['and banana are fruits']
+Zero or more times(*)
+Zero or many times. The pattern could may not occur or it can occur many times.
+
+regex_pattern = r'[a].*'  # . any character, * any character zero or more times 
+txt = '''Apple and banana are fruits'''
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['and banana are fruits']
+Zero or one time(?)
+Zero or one time. The pattern may not occur or it may occur once.
+
+txt = '''I am not sure if there is a convention how to write the word e-mail.
+Some people write it as email others may write it as Email or E-mail.'''
+regex_pattern = r'[Ee]-?mail'  # ? means here that '-' is optional
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['e-mail', 'email', 'Email', 'E-mail']
+Quantifier in RegEx
+We can specify the length of the substring we are looking for in a text, using a curly bracket. Let us imagine, we are interested in a substring with a length of 4 characters:
+
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+regex_pattern = r'\d{4}'  # exactly four times
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['2019', '2021']
+
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+regex_pattern = r'\d{1, 4}'   # 1 to 4
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['6', '2019', '8', '2021']
+Cart ^
+Starts with
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+regex_pattern = r'^This'  # ^ means starts with
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['This']
+Negation
+txt = 'This regular expression example was made on December 6,  2019 and revised on July 8, 2021'
+regex_pattern = r'[^A-Za-z ]+'  # ^ in set character means negation, not A to Z, not a to z, no space
+matches = re.findall(regex_pattern, txt)
+print(matches)  # ['6,', '2019', '8', '2021']
+💻 Exercises: Day 18
+Exercises: Level 1
+What is the most frequent word in the following paragraph?
+    paragraph = 'I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.
+    [
+    (6, 'love'),
+    (5, 'you'),
+    (3, 'can'),
+    (2, 'what'),
+    (2, 'teaching'),
+    (2, 'not'),
+    (2, 'else'),
+    (2, 'do'),
+    (2, 'I'),
+    (1, 'which'),
+    (1, 'to'),
+    (1, 'the'),
+    (1, 'something'),
+    (1, 'if'),
+    (1, 'give'),
+    (1, 'develop'),
+    (1, 'capabilities'),
+    (1, 'application'),
+    (1, 'an'),
+    (1, 'all'),
+    (1, 'Python'),
+    (1, 'If')
+    ]
+The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.
+points = ['-12', '-4', '-3', '-1', '0', '4', '8']
+sorted_points =  [-12, -4, -3, -1, -1, 0, 2, 4, 8]
+distance = 8 -(-12) # 20
+Exercises: Level 2
+Write a pattern which identifies if a string is a valid python variable
+
+is_valid_variable('first_name') # True
+is_valid_variable('first-name') # False
+is_valid_variable('1first_name') # False
+is_valid_variable('firstname') # True
+Exercises: Level 3
+Clean the following text. After cleaning, count three most frequent words in the string.
+
+sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
+
+print(clean_text(sentence));
+I am a teacher and I love teaching There is nothing as more rewarding as educating and empowering people I found teaching more interesting than any other jobs Does this motivate you to be a teacher
+print(most_frequent_words(cleaned_text)) # [(3, 'I'), (2, 'teaching'), (2, 'teacher')]
+
+
+
+
+🌕 You are excelling. You made it to half way to your way to greatness. Now do some exercises for your brain and for your muscle.
+
+💻 Exercises: Day 15
+Open you python interactive shell and try all the examples covered in this section.
+
+
+
+🌕 You are awesome. You have just completed day 2 challenges and you are two steps ahead on your way to greatness. Now do some exercises for your brain and muscles.
+
+
+
+
+💻 Exercises - Day 2
+Exercises: Level 1
+Inside 30DaysOfPython create a folder called day_2. Inside this folder create a file named variables.py
+Write a python comment saying 'Day 2: 30 Days of python programming'
+Declare a first name variable and assign a value to it
+Declare a last name variable and assign a value to it
+Declare a full name variable and assign a value to it
+Declare a country variable and assign a value to it
+Declare a city variable and assign a value to it
+Declare an age variable and assign a value to it
+Declare a year variable and assign a value to it
+Declare a variable is_married and assign a value to it
+Declare a variable is_true and assign a value to it
+Declare a variable is_light_on and assign a value to it
+Declare multiple variable on one line
+Exercises: Level 2
+Check the data type of all your variables using type() built-in function
+Using the len() built-in function, find the length of your first name
+Compare the length of your first name and your last name
+Declare 5 as num_one and 4 as num_two
+Add num_one and num_two and assign the value to a variable total
+Subtract num_two from num_one and assign the value to a variable diff
+Multiply num_two and num_one and assign the value to a variable product
+Divide num_one by num_two and assign the value to a variable division
+Use modulus division to find num_two divided by num_one and assign the value to a variable remainder
+Calculate num_one to the power of num_two and assign the value to a variable exp
+Find floor division of num_one by num_two and assign the value to a variable floor_division
+The radius of a circle is 30 meters.
+Calculate the area of a circle and assign the value to a variable name of area_of_circle
+Calculate the circumference of a circle and assign the value to a variable name of circum_of_circle
+Take radius as user input and calculate the area.
+Use the built-in input function to get first name, last name, country and age from a user and store the value to their corresponding variable names
+Run help('keywords') in Python shell or in your file to check for the Python reserved words or keywords
+
+
+💻 Exercises - Day 3
+Declare your age as integer variable
+Declare your height as a float variable
+Declare a variable that store a complex number
+Write a script that prompts the user to enter base and height of the triangle and calculate an area of this triangle (area = 0.5 x b x h).
+    Enter base: 20
+    Enter height: 10
+    The area of the triangle is 100
+Write a script that prompts the user to enter side a, side b, and side c of the triangle. Calculate the perimeter of the triangle (perimeter = a + b + c).
+Enter side a: 5
+Enter side b: 4
+Enter side c: 3
+The perimeter of the triangle is 12
+Get length and width of a rectangle using prompt. Calculate its area (area = length x width) and perimeter (perimeter = 2 x (length + width))
+Get radius of a circle using prompt. Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
+Calculate the slope, x-intercept and y-intercept of y = 2x -2
+Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
+Compare the slopes in tasks 8 and 9.
+Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+Find the length of 'python' and 'dragon' and make a falsy comparison statement.
+Use and operator to check if 'on' is found in both 'python' and 'dragon'
+I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+There is no 'on' in both dragon and python
+Find the length of the text python and convert the value to float and convert it to string
+Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+Check if type of '10' is equal to type of 10
+Check if int('9.8') is equal to 10
+Writ a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+Enter hours: 40
+Enter rate per hour: 28
+Your weekly earning is 1120
+Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+Enter number of years you have lived: 100
+You have lived for 3153600000 seconds.
+Write a Python script that displays the following table
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+
+
+
+# Syntax
+open('filename', mode) # mode(r, a, w, x, t,b)  could be to read, write, update
+"r" - Read - Default value. Opens a file for reading, it returns an error if the file does not exist
+"a" - Append - Opens a file for appending, creates the file if it does not exist
+"w" - Write - Opens a file for writing, creates the file if it does not exist
+"x" - Create - Creates the specified file, returns an error if the file exists
+"t" - Text - Default value. Text mode
+"b" - Binary - Binary mode (e.g. images)
+Opening Files for Reading
+The default mode of open is reading, so we do not have to specify 'r' or 'rt'. I have created and saved a file named reading_file_example.txt in the files directory. Let us see how it is done:
+
+f = open('./files/reading_file_example.txt')
+print(f) # <_io.TextIOWrapper name='./files/reading_file_example.txt' mode='r' encoding='UTF-8'>
+As you can see in the example above, I printed the opened file and it gave some information about it. Opened file has different reading methods: read(), readline, readlines. An opened file has to be closed with close() method.
+
+read(): read the whole text as string. If we want to limit the number of characters we want to read, we can limit it by passing int value to the read(number) method.
+f = open('./files/reading_file_example.txt')
+txt = f.read()
+print(type(txt))
+print(txt)
+f.close()
+# output
+<class 'str'>
+This is an example to show how to open a file and read.
+This is the second line of the text.
+Instead of printing all the text, let us print the first 10 characters of the text file.
+
+f = open('./files/reading_file_example.txt')
+txt = f.read(10)
+print(type(txt))
+print(txt)
+f.close()
+# output
+<class 'str'>
+This is an
+readline(): read only the first line
+f = open('./files/reading_file_example.txt')
+line = f.readline()
+print(type(line))
+print(line)
+f.close()
+# output
+<class 'str'>
+This is an example to show how to open a file and read.
+readlines(): read all the text line by line and returns a list of lines
+f = open('./files/reading_file_example.txt')
+lines = f.readlines()
+print(type(lines))
+print(lines)
+f.close()
+# output
+<class 'list'>
+['This is an example to show how to open a file and read.\n', 'This is the second line of the text.']
+Another way to get all the lines as a list is using splitlines():
+
+f = open('./files/reading_file_example.txt')
+lines = f.read().splitlines()
+print(type(lines))
+print(lines)
+f.close()
+# output
+<class 'list'>
+['This is an example to show how to open a file and read.', 'This is the second line of the text.']
+After we open a file, we should close it. There is a high tendency of forgetting to close them. There is a new way of opening files using with - closes the files by itself. Let us rewrite the the previous example with the with method:
+
+with open('./files/reading_file_example.txt') as f:
+    lines = f.read().splitlines()
+    print(type(lines))
+    print(lines)
+# output
+<class 'list'>
+['This is an example to show how to open a file and read.', 'This is the second line of the text.']
+Opening Files for Writing and Updating
+To write to an existing file, we must add a mode as parameter to the open() function:
+
+"a" - append - will append to the end of the file, if the file does not it creates a new file.
+"w" - write - will overwrite any existing content, if the file does not exist it creates.
+Let us append some text to the file we have been reading:
+
+with open('./files/reading_file_example.txt','a') as f:
+    f.write('This text has to be appended at the end')
+The method below creates a new file, if the file does not exist:
+
+with open('./files/writing_file_example.txt','w') as f:
+    f.write('This text will be written in a newly created file')
+Deleting Files
+We have seen in previous section, how to make and remove a directory using os module. Again now, if we want to remove a file we use os module.
+
+import os
+os.remove('./files/example.txt')
+If the file does not exist, the remove method will raise an error, so it is good to use a condition like this:
+
+import os
+if os.path.exists('./files/example.txt'):
+    os.remove('./files/example.txt')
+else:
+    print('The file does not exist')
+File Types
+File with txt Extension
+File with txt extension is a very common form of data and we have covered it in the previous section. Let us move to the JSON file
+
+File with json Extension
+JSON stands for JavaScript Object Notation. Actually, it is a stringified JavaScript object or Python dictionary.
+
+Example:
+
+# dictionary
+person_dct= {
+    "name":"Asabeneh",
+    "country":"Finland",
+    "city":"Helsinki",
+    "skills":["JavaScrip", "React","Python"]
+}
+# JSON: A string form a dictionary
+person_json = "{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}"
+
+# we use three quotes and make it multiple line to make it more readable
+person_json = '''{
+    "name":"Asabeneh",
+    "country":"Finland",
+    "city":"Helsinki",
+    "skills":["JavaScrip", "React","Python"]
+}'''
+Changing JSON to Dictionary
+To change a JSON to a dictionary, first we import the json module and then we use loads method.
+
+import json
+# JSON
+person_json = '''{
+    "name": "Asabeneh",
+    "country": "Finland",
+    "city": "Helsinki",
+    "skills": ["JavaScrip", "React", "Python"]
+}'''
+# let's change JSON to dictionary
+person_dct = json.loads(person_json)
+print(type(person_dct))
+print(person_dct)
+print(person_dct['name'])
+# output
+<class 'dict'>
+{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}
+Asabeneh
+Changing Dictionary to JSON
+To change a dictionary to a JSON we use dumps method from the json module.
+
+import json
+# python dictionary
+person = {
+    "name": "Asabeneh",
+    "country": "Finland",
+    "city": "Helsinki",
+    "skills": ["JavaScrip", "React", "Python"]
+}
+# let's convert it to  json
+person_json = json.dumps(person, indent=4) # indent could be 2, 4, 8. It beautifies the json
+print(type(person_json))
+print(person_json)
+# output
+# when you print it, it does not have the quote, but actually it is a string
+# JSON does not have type, it is a string type.
+<class 'str'>
+{
+    "name": "Asabeneh",
+    "country": "Finland",
+    "city": "Helsinki",
+    "skills": [
+        "JavaScrip",
+        "React",
+        "Python"
+    ]
+}
+Saving as JSON File
+We can also save our data as a json file. Let us save it as a json file using the following steps. For writing a json file, we use the json.dump() method, it can take dictionary, output file, ensure_ascii and indent.
+
+import json
+# python dictionary
+person = {
+    "name": "Asabeneh",
+    "country": "Finland",
+    "city": "Helsinki",
+    "skills": ["JavaScrip", "React", "Python"]
+}
+with open('./files/json_example.json', 'w', encoding='utf-8') as f:
+    json.dump(person, f, ensure_ascii=False, indent=4)
+In the code above, we use encoding and indentation. Indentation makes the json file easy to read.
+
+File with csv Extension
+CSV stands for comma separated values. CSV is a simple file format used to store tabular data, such as a spreadsheet or database. CSV is a very common data format in data science.
+
+Example:
+
+"name","country","city","skills"
+"Asabeneh","Finland","Helsinki","JavaScript"
+Example:
+
+import csv
+with open('./files/csv_example.csv') as f:
+    csv_reader = csv.reader(f, delimiter=',') # w use, reader method to read csv
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            print(f'Column names are :{", ".join(row)}')
+            line_count += 1
+        else:
+            print(
+                f'\t{row[0]} is a teachers. He lives in {row[1]}, {row[2]}.')
+            line_count += 1
+    print(f'Number of lines:  {line_count}')
+# output:
+Column names are :name, country, city, skills
+        Asabeneh is a teacher. He lives in Finland, Helsinki.
+Number of lines:  2
+File with xlsx Extension
+To read excel files we need to install xlrd package. We will cover this after we cover package installing using pip.
+
+import xlrd
+excel_book = xlrd.open_workbook('sample.xls)
+print(excel_book.nsheets)
+print(excel_book.sheet_names)
+File with xml Extension
+XML is another structured data format which looks like HTML. In XML the tags are not predefined. The first line is an XML declaration. The person tag is the root of the XML. The person has a gender attribute. Example:XML
+
+<?xml version="1.0"?>
+<person gender="female">
+  <name>Asabeneh</name>
+  <country>Finland</country>
+  <city>Helsinki</city>
+  <skills>
+    <skill>JavaScrip</skill>
+    <skill>React</skill>
+    <skill>Python</skill>
+  </skills>
+</person>
+For more information on how to read an XML file check the documentation
+
+import xml.etree.ElementTree as ET
+tree = ET.parse('./files/xml_example.xml')
+root = tree.getroot()
+print('Root tag:', root.tag)
+print('Attribute:', root.attrib)
+for child in root:
+    print('field: ', child.tag)
+# output
+Root tag: person
+Attribute: {'gender': 'male'}
+field: name
+field: country
+field: city
+field: skills
+🌕 You are making a big progress. Maintain your momentum, keep the good work. Now do some exercises for your brain and muscles.
+
+💻 Exercises: Day 19
+Exercises: Level 1
+Write a function which count number of lines and number of words in a text. All the files are in the data the folder: a) Read obama_speech.txt file and count number of lines and words b) Read michelle_obama_speech.txt file and count number of lines and words c) Read donald_speech.txt file and count number of lines and words d) Read melina_trump_speech.txt file and count number of lines and words
+
+Read the countries_data.json data file in data directory, create a function that finds the ten most spoken languages
+
+# Your output should look like this
+print(most_spoken_languages(filename='./data/countries_data.json', 10))
+[(91, 'English'),
+(45, 'French'),
+(25, 'Arabic'),
+(24, 'Spanish'),
+(9, 'Russian'),
+(9, 'Portuguese'),
+(8, 'Dutch'),
+(7, 'German'),
+(5, 'Chinese'),
+(4, 'Swahili'),
+(4, 'Serbian')]
+
+# Your output should look like this
+print(most_spoken_languages(filename='./data/countries_data.json', 3))
+[(91, 'English'),
+(45, 'French'),
+(25, 'Arabic')]
+Read the countries_data.json data file in data directory, create a function that creates a list of the ten most populated countries
+
+# Your output should look like this
+print(most_populated_countries(filename='./data/countries_data.json', 10))
+
+[
+{'country': 'China', 'population': 1377422166},
+{'country': 'India', 'population': 1295210000},
+{'country': 'United States of America', 'population': 323947000},
+{'country': 'Indonesia', 'population': 258705000},
+{'country': 'Brazil', 'population': 206135893},
+{'country': 'Pakistan', 'population': 194125062},
+{'country': 'Nigeria', 'population': 186988000},
+{'country': 'Bangladesh', 'population': 161006790},
+{'country': 'Russian Federation', 'population': 146599183},
+{'country': 'Japan', 'population': 126960000}
+]
+
+# Your output should look like this
+
+print(most_populated_countries(filename='./data/countries_data.json', 3))
+[
+{'country': 'China', 'population': 1377422166},
+{'country': 'India', 'population': 1295210000},
+{'country': 'United States of America', 'population': 323947000}
+]
+Exercises: Level 2
+Extract all incoming email addresses as a list from the email_exchange_big.txt file.
+Find the most common words in the English language. Call the name of your function find_most_common_words, it will take two parameters - a string or a file and a positive integer, indicating the number of words. Your function will return an array of tuples in descending order. Check the output
+    # Your output should look like this
+    print(find_most_common_words('sample.txt', 10))
+    [(10, 'the'),
+    (8, 'be'),
+    (6, 'to'),
+    (6, 'of'),
+    (5, 'and'),
+    (4, 'a'),
+    (4, 'in'),
+    (3, 'that'),
+    (2, 'have'),
+    (2, 'I')]
+
+    # Your output should look like this
+    print(find_most_common_words('sample.txt', 5))
+
+    [(10, 'the'),
+    (8, 'be'),
+    (6, 'to'),
+    (6, 'of'),
+    (5, 'and')]
+Use the function, find_most_frequent_words to find: a) The ten most frequent words used in Obama's speech b) The ten most frequent words used in Michelle's speech c) The ten most frequent words used in Trump's speech d) The ten most frequent words used in Melina's speech
+Write a python application that checks similarity between two texts. It takes a file or a string as a parameter and it will evaluate the similarity of the two texts. For instance check the similarity between the transcripts of Michelle's and Melina's speech. You may need a couple of functions, function to clean the text(clean_text), function to remove support words(remove_support_words) and finally to check the similarity(check_text_similarity). List of stop words are in the data directory
+Find the 10 most repeated words in the romeo_and_juliet.txt
+Read the hacker news csv file and find out: a) Count the number of lines containing python or Python b) Count the number lines containing JavaScript, javascript or Javascript c) Count the number lines containing Java and not JavaScript
